@@ -1,3 +1,14 @@
 {
-  "extends": ["next/babel", "next/core-web-vitals"]
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "next/babel",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {}
 }
