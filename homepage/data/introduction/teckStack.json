@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "image": "",
+      "description": ""
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "image": "",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "JavaScript",
+        "image": "",
+        "description": ""
+      },
+      {
+        "id": 4,
+        "name": "TypeScript",
+        "image": "",
+        "description": ""
+      },
+      {
+        "id": 5,
+        "name": "React",
+        "image": "",
+        "description": ""
+      },
+      {
+        "id": 6,
+        "name": "zustand",
+        "image": "",
+        "description": ""
+      },
+      {
+        "id": 6,
+        "name": "React Query",
+        "image": "",
+        "description": ""
+      },
+      {
+        "id": 7,
+        "name": "Next.js",
+        "image": "",
+        "description": ""
+      }
+  ]
+}
