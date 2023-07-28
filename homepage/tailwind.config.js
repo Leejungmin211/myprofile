@@ -10,6 +10,9 @@ module.exports = {
       colors: {
       brand: '#f5f5f5'
       },
+      screens: {
+        xsm: {min: '360px', max: "639px"}
+      }
     },
   },
   plugins: [],

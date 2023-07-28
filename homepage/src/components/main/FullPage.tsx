@@ -1,9 +1,9 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import Career from './Career';
-import MyProfile from './MyProfile';
+import About from './About';
 import Project from './Project';
 import Section from './Section';
+import Profile from './Profile';
 
 export interface pageObj {
   pageNum: number;
@@ -12,9 +12,9 @@ export interface pageObj {
 }
 
 const pageArray = [
-  { pageNum: 1, component: MyProfile, bgColor: 'bg-[#98c1fa]' },
+  { pageNum: 1, component: Profile, bgColor: 'bg-[#98c1fa]' },
   { pageNum: 2, component: Project, bgColor: 'bg-[#8ad9c8]' },
-  { pageNum: 3, component: Career, bgColor: 'bg-[#ccc]' },
+  { pageNum: 3, component: About, bgColor: 'bg-[#ccc]' },
 ];
 
 export default function FullPage() {

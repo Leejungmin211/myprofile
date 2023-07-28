@@ -1,5 +1,5 @@
-import Portfolio from '../project/Portfolio';
-import TeckStack from '../project/TeckStack';
+import Portfolio from '../Portfolio';
+import TeckStack from '../TeckStack';
 
 export default function Project() {
   return (
