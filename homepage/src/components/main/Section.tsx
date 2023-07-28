@@ -15,11 +15,9 @@ export default function Section(props: SectionProps) {
       ref={(element) => {
         pageRefs.current[pageNum] = element!;
       }}
-      className={`w-screen h-screen ${bgColor} p-32 flex justify-center`}
+      className={`w-screen h-screen ${bgColor} p-32 flex justify-center items-center`}
     >
-      <div className="bg-white w-4/5">
-        <props.component />
-      </div>
+      <props.component />
     </div>
   );
 }
