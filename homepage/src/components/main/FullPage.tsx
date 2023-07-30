@@ -1,22 +1,26 @@
 'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 import Profile from './Profile';
 import Skill from './Skill';
 import Project from './Project';
 import Contact from './Contact';
 import Section from './Section';
+import Categories from './Categories';
+import Header from './Header';
 
 export interface pageObj {
   pageNum: number;
   component: React.FC;
+  name: string;
   bgColor: string;
 }
 
-const pageArray = [
-  { pageNum: 1, component: Profile, bgColor: 'bg-[#98c1fa]' },
-  { pageNum: 2, component: Skill, bgColor: 'bg-[#8ad9c8]' },
-  { pageNum: 3, component: Project, bgColor: 'bg-[#8ad9c8]' },
-  { pageNum: 4, component: Contact, bgColor: 'bg-[#ccc]' },
+export const pageArray = [
+  { pageNum: 1, component: Profile, name: 'PROFILE', bgColor: 'bg-[#98c1fa]' },
+  { pageNum: 2, component: Skill, name: 'SKILL', bgColor: 'bg-[#a1ccd1]' },
+  { pageNum: 3, component: Project, name: 'PROJECT', bgColor: 'bg-[#a5c0dd]' },
+  { pageNum: 4, component: Contact, name: 'CONTACT', bgColor: 'bg-[#ffd0d0]' },
 ];
 
 export default function FullPage() {
@@ -31,7 +35,7 @@ export default function FullPage() {
     }
   }, []);
 
-  const handlePageChange = (event: Event) => {
+  const handlePageChange = () => {
     if (!windowObj) return;
 
     let scroll = windowObj.scrollY;
@@ -68,6 +72,11 @@ export default function FullPage() {
 
   return (
     <div className="w-screen h-screen">
+      <Header
+        pageArray={pageArray}
+        onClick={handlePointClick}
+        currentPageNum={currentPageNum}
+      />
       <main className="relative">
         {pageArray.map((item, index) => {
           return (
@@ -79,16 +88,17 @@ export default function FullPage() {
               window={windowObj!}
               pageRefs={pageRefs}
             />
+     
           );
         })}
-        <div className="flex flex-col space-y-4 fixed top-96 right-10 z-10">
-          {/* 페이지 버튼 렌더링 */}
-          {pageArray.map((item, index) => (
-            <button key={index} onClick={() => handlePointClick(item.pageNum)}>
-              {item.pageNum}
-            </button>
-          ))}
-        </div>
+        <ul className="flex flex-col space-y-3 fixed top-96 right-10 z-10 text-xs text-slate-500 xsm:right-6">
+          <Categories
+            pageArray={pageArray}
+            onClick={handlePointClick}
+            currentPageNum={currentPageNum}
+            type="number"
+          />
+        </ul>
       </main>
     </div>
   );

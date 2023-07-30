@@ -1,8 +1,10 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
-import Header from '@/components/Header';
+import { Nanum_Gothic } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const gothic = Nanum_Gothic({
+  weight: '700',
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Leejungmin',
@@ -18,11 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="w-full mx-auto flex justify-center">
-        <Header />
-        {children}
-      </body>
+    <html lang="en" className={gothic.className}>
+      <body className="w-full mx-auto flex justify-center">{children}</body>
     </html>
   );
 }

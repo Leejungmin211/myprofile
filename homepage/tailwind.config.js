@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      brand: '#f5f5f5'
+        navy: '#0a0a7c',
       },
       screens: {
-        xsm: {min: '360px', max: "639px"}
-      }
+        xsm: { min: '360px', max: '639px' },
+      },
     },
   },
   plugins: [],
