@@ -8,3 +8,7 @@ body {
 ul, li {
     list-style: none;
 }
+
+input, textarea {
+    outline: none;
+}

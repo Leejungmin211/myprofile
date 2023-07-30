@@ -18,7 +18,7 @@ export default function Profile() {
     <section>
       <TypingText />
       <div className="flex flex-col justify-center items-center border-white border-opacity-50 border-2 rounded-2xl px-16 py-8 xsm:p-8">
-        <div className='flex justify-center items-center xsm:flex-col'>
+        <div className="flex justify-center items-center xsm:flex-col">
           <Image
             className="rounded-full object-cover w-60 h-60 sm:w-30 sm:h-30 xsm:w-20 xsm:h-20"
             src={MyPicture}
@@ -31,7 +31,7 @@ export default function Profile() {
                   key={index}
                   href={data.link}
                   target="_blank"
-                  className="rounded-3xl border-2 px-6 py-2 m-2 transition duration-0 hover:bg-white hover:text-navy xsm:text-xs hover:duration-500 ease-in-out"
+                  className="rounded-3xl border-2 px-6 py-2 m-2 transition duration-0 hover:bg-white hover:bg-opacity-50 hover:text-navy xsm:text-xs hover:duration-500 ease-in-out"
                 >
                   {data.text}
                 </Link>
@@ -39,7 +39,7 @@ export default function Profile() {
             })}
           </div>
         </div>
-        <p className='mt-8'></p>
+        <p className="text-base text-slate-700 mt-10"></p>
       </div>
     </section>
   );

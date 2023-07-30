@@ -18,9 +18,9 @@ export interface pageObj {
 
 export const pageArray = [
   { pageNum: 1, component: Profile, name: 'PROFILE', bgColor: 'bg-[#98c1fa]' },
-  { pageNum: 2, component: Skill, name: 'SKILL', bgColor: 'bg-[#a1ccd1]' },
-  { pageNum: 3, component: Project, name: 'PROJECT', bgColor: 'bg-[#a5c0dd]' },
-  { pageNum: 4, component: Contact, name: 'CONTACT', bgColor: 'bg-[#ffd0d0]' },
+  { pageNum: 2, component: Skill, name: 'SKILL', bgColor: 'bg-[#98c1fa]' },
+  { pageNum: 3, component: Project, name: 'PROJECT', bgColor: 'bg-[#98c1fa]' },
+  { pageNum: 4, component: Contact, name: 'CONTACT', bgColor: 'bg-[#98c1fa]' },
 ];
 
 export default function FullPage() {
