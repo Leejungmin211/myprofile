@@ -28,11 +28,11 @@ export default function TypingText() {
   });
 
   return (
-    <>
+    <div className='h-32 xsm:h-16'>
       <pre className="text-slate-700 text-2xl font-bold mb-12 text-center leading-relaxed xsm:text-sm xsm:mb-8">
         {typingText}
         <span className="border-r-2 ml-1 border-slate-700"></span>
       </pre>
-    </>
+    </div>
   );
 }
