@@ -39,7 +39,10 @@ export default function Profile() {
             })}
           </div>
         </div>
-        <p className="text-base text-slate-700 mt-10"></p>
+        <p className="text-base text-slate-700 mt-10">
+          {' '}
+          프론트엔드 개발자로 새로운 시작을 하고 싶은 이정민입니다.
+        </p>
       </div>
     </section>
   );

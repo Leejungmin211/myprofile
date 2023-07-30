@@ -34,7 +34,6 @@ export default function ContactForm() {
           id="from"
           name="from"
           required
-          autoFocus
           value={form.from}
           onChange={textChange}
           className={INPUT_STYLE}

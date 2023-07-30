@@ -7,6 +7,7 @@ export default function TypingText() {
   const [typingText, setTypingText] = useState('');
   const [count, setCount] = useState(0);
   const [typingCompleted, setTypingCompleted] = useState(false);
+  const [showCursor, setShowCursor] = useState(false);
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
@@ -22,18 +23,31 @@ export default function TypingText() {
           setCount(0);
         }, 1500);
       }
-    }, 150);
+    }, 100);
 
     return () => {
       clearInterval(typingInterval);
     };
   }, [count]);
 
+  useEffect(() => {
+    // Start the blinking cursor after typing is completed
+    if (typingCompleted) {
+      const cursorBlinkInterval = setInterval(() => {
+        setShowCursor((prev) => !prev);
+      }, 500); // Adjust the blinking speed
+
+      return () => {
+        clearInterval(cursorBlinkInterval);
+      };
+    }
+  }, [typingCompleted]);
+
   return (
     <div className="h-32 xsm:h-16">
       <pre className="text-slate-700 text-2xl font-bold mb-12 text-center leading-relaxed xsm:text-sm xsm:mb-8">
         {typingText}
-        <span className="border-r-2 ml-1 border-slate-700 transition duration-1 ease-in-out "></span>
+        <span className={`border-r-2 ml-1 border-slate-700 transition duration-500 ease-in-out ${showCursor ? 'opacity-100' : 'opacity-0'}`}></span>
       </pre>
     </div>
   );
