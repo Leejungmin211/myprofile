@@ -17,7 +17,7 @@ export default function Profile() {
   return (
     <section>
       <TypingText />
-      <div className="flex justify-center items-center border-white border-opacity-50 border-2 rounded-2xl p-8">
+      <div className="flex justify-center items-center border-white border-opacity-50 border-2 rounded-2xl p-16 xsm:p-8 xsm:flex-col">
         <Image
           className="rounded-full object-cover w-60 h-60 sm:w-30 sm:h-30 xsm:w-20 xsm:h-20"
           src={MyPicture}

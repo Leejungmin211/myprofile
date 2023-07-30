@@ -16,9 +16,9 @@ export default function Header({
   return (
     <header className="w-full h-16 fixed z-10 flex justify-between items-end px-12 text-white xsm:px-8">
       <Link href="/">
-        <h1 className="text-2xl font-bold xsm:text-lg">Leejungmin</h1>
+        <h1 className="text-2xl font-bold xsm:text-xl">Leejungmin</h1>
       </Link>
-      <ul className="flex gap-10 absolute right-8 text-lg font-semibold xsm:text-sm xsm:gap-4 xsm:right-2">
+      <ul className="flex gap-10 absolute right-8 text-lg font-semibold xsm:hidden">
         <Categories
           pageArray={pageArray}
           onClick={onClick}
