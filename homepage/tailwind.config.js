@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         navy: '#0a0a7c',
-        yellow_green: '#F7FFE5',
+        yellow_green: '#f7ffe5',
+        violet: "#5C469C"
       },
       screens: {
         xsm: { min: '360px', max: '639px' },

@@ -60,6 +60,7 @@ export default function ContactForm() {
           type="email"
           id="from"
           name="from"
+          placeholder="이메일을 입력해주세요."
           required
           value={form.from}
           onChange={textChange}
@@ -73,6 +74,7 @@ export default function ContactForm() {
           type="text"
           id="subject"
           name="subject"
+          placeholder="메일의 제목을 입력해주세요."
           required
           value={form.subject}
           onChange={textChange}
@@ -85,6 +87,7 @@ export default function ContactForm() {
           rows={10}
           id="message"
           name="message"
+          placeholder="메일의 내용을 입력해주세요."
           required
           value={form.message}
           onChange={textChange}

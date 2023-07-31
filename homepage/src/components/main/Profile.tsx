@@ -22,7 +22,7 @@ export default function Profile() {
   return (
     <section>
       <TypingText />
-      <div className="flex flex-col justify-center items-center border-white border-opacity-50 border-2 rounded-2xl px-16 py-8 xsm:p-8">
+      <div className="flex flex-col justify-center items-center border-white border-opacity-50 border-2 rounded-2xl px-16 py-12 xsm:p-8">
         <div className="flex justify-center items-center xsm:flex-col">
           <Image
             className="rounded-full object-cover w-60 h-60 sm:w-30 sm:h-30 xsm:w-20 xsm:h-20"
@@ -44,7 +44,6 @@ export default function Profile() {
             })}
           </div>
         </div>
-        <p className="text-base text-slate-700 mt-10"></p>
       </div>
     </section>
   );

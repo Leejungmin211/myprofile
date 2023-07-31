@@ -17,11 +17,18 @@ export default function Categories({
           <li
             key={index}
             onClick={() => onClick(item.pageNum)}
-            className='cursor-pointer text-center'
+            className="cursor-pointer text-center"
           >
-            {type === 'number' && <span className={`${
-              item.pageNum === currentPageNum && 'text-white text-base'}
-            `}>●</span>} 
+            {type === 'number' && (
+              <span
+                className={`${
+                  item.pageNum === currentPageNum && 'text-white text-base'
+                }
+            `}
+              >
+                ●
+              </span>
+            )}
             {type === 'string' && (
               <span className="hover:text-slate-600 transition duration-0 hover:duration-500 ease-in-out">
                 {item.name}

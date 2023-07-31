@@ -14,9 +14,17 @@ export default function Header({
   currentPageNum,
 }: PageCategory) {
   return (
-    <header className="w-full h-16 fixed z-10 flex justify-between items-end px-12 text-white xsm:px-8 xsm:items-center">
+    <header
+      className={`w-full h-16 fixed z-10 flex justify-between items-center text-white ${
+        currentPageNum === 2 || currentPageNum === 3
+          ? 'bg-gradient-to-r from-cyan-500 to-blue-500'
+          : null
+      }`}
+    >
       <Link href="/">
-        <h1 className="text-2xl font-bold xsm:text-xl">Leejungmin</h1>
+        <h1 className="text-2xl font-bold xsm:text-xl px-12 xsm:px-8">
+          Leejungmin
+        </h1>
       </Link>
       <ul className="flex gap-10 absolute right-8 text-lg font-semibold xsm:hidden">
         <Categories

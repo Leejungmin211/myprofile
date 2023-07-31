@@ -1,13 +1,10 @@
-import Portfolio from '../Portfolio';
-import TeckStack from '../TeckStack';
+import CardGrid from '../portfolio/CardGrid';
 
 export default function Project() {
   return (
     <div>
-      <h1>기술스택</h1>
-      <TeckStack />
-      <h1>포토폴리오</h1>
-      <Portfolio />
+      <h1>PORTFOLIO</h1>
+      <CardGrid />
     </div>
   );
 }

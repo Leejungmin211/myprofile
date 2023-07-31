@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={gothic.className}>
-      <body className="w-full mx-auto flex justify-center">{children}</body>
+      <body className="w-screen mx-auto flex justify-center">{children}</body>
     </html>
   );
 }
