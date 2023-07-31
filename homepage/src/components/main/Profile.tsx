@@ -4,13 +4,18 @@ import MyPicture from '../../../public/images/mypicture.jpg';
 import TypingText from '../profile/TypingText';
 
 const ABOUT_DATA = [
-  { link: '/', text: 'jungmin.fe@gmail.com' },
+  { link: '/#contact', text: 'jungmin.fe@gmail.com', target: '_self' },
   {
     link: 'https://hail-teal-329.notion.site/6bd39f1b9d9f4f11976929634fd7f67e?pvs=4',
     text: 'RESUME',
+    target: '_blank',
   },
-  { link: 'https://github.com/Leejungmin211', text: 'GITHUB' },
-  { link: 'https://velog.io/@jungmin211', text: 'BLOG' },
+  {
+    link: 'https://github.com/Leejungmin211',
+    text: 'GITHUB',
+    target: '_blank',
+  },
+  { link: 'https://velog.io/@jungmin211', text: 'BLOG', target: '_blank' },
 ];
 
 export default function Profile() {
@@ -30,7 +35,7 @@ export default function Profile() {
                 <Link
                   key={index}
                   href={data.link}
-                  target="_blank"
+                  target={data.target}
                   className="rounded-3xl border-2 px-6 py-2 m-2 transition duration-0 hover:bg-white hover:bg-opacity-50 hover:text-navy xsm:text-xs hover:duration-500 ease-in-out"
                 >
                   {data.text}
