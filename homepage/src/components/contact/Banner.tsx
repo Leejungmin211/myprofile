@@ -1,7 +1,7 @@
 export interface BannerData {
   message: string;
   state: 'success' | 'error';
-}
+};
 
 export default function Banner({
   banner: { message, state },

@@ -1,8 +1,7 @@
 import './globals.css';
-import { Nanum_Gothic } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 
-const gothic = Nanum_Gothic({
-  weight: '700',
+const sans = Open_Sans({
   subsets: ['latin'],
 });
 
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={gothic.className}>
+    <html lang="en" className={sans.className}>
       <body className="w-screen mx-auto flex justify-center">{children}</body>
     </html>
   );

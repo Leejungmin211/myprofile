@@ -23,6 +23,10 @@ export default function Categories({
               <span
                 className={`${
                   item.pageNum === currentPageNum && 'text-white text-base'
+                } ${
+                  item.pageNum === currentPageNum &&
+                  (currentPageNum === 2 || currentPageNum === 3) &&
+                  'xsm:text-blue-200 '
                 }
             `}
               >

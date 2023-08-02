@@ -1,26 +1,24 @@
 'use client';
-
 import React, { useEffect, useRef, useState } from 'react';
+import Section from './Section';
+import Categories from './Categories';
+import Header from './Header';
 import Profile from './Profile';
 import Skill from './Skill';
 import Project from './Project';
 import Contact from './Contact';
-import Section from './Section';
-import Categories from './Categories';
-import Header from './Header';
 
 export interface pageObj {
   pageNum: number;
   component: React.FC;
   name: string;
-  bgColor: string;
 }
 
 export const pageArray = [
-  { pageNum: 1, component: Profile, name: 'PROFILE', bgColor: 'bg-[#98c1fa]' },
-  { pageNum: 2, component: Skill, name: 'SKILL', bgColor: 'bg-[#98c1fa]' },
-  { pageNum: 3, component: Project, name: 'PROJECT', bgColor: 'bg-[#98c1fa]' },
-  { pageNum: 4, component: Contact, name: 'CONTACT', bgColor: 'bg-[#98c1fa]' },
+  { pageNum: 1, component: Profile, name: 'PROFILE' },
+  { pageNum: 2, component: Skill, name: 'SKILL' },
+  { pageNum: 3, component: Project, name: 'PROJECT' },
+  { pageNum: 4, component: Contact, name: 'CONTACT' },
 ];
 
 export default function FullPage() {
@@ -84,14 +82,12 @@ export default function FullPage() {
               key={index}
               pageNum={item.pageNum}
               component={item.component}
-              bgColor={item.bgColor}
               window={windowObj!}
               pageRefs={pageRefs}
             />
-     
           );
         })}
-        <ul className="flex flex-col space-y-3 fixed top-96 right-10 z-10 text-xs text-slate-500 xsm:right-4">
+        <ul className="flex flex-col space-y-3 fixed top-96 right-10 z-10 text-xs text-slate-500 xsm:right-3 xsm:top-1/2">
           <Categories
             pageArray={pageArray}
             onClick={handlePointClick}

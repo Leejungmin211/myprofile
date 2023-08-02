@@ -1,22 +1,29 @@
-{
-  "data": [
-    {
-      "id": "port1",
-      "name": "",
-      "date": "2021-05-03",
-      "image": "",
-      "content": "",
-      "link": [{ "github": "" }, { "homepage": "" }],
-      "stack": []
-    },
-    {
-        "id": "port2",
-        "name": "",
-        "date": "2021-05-03",
-        "image": "",
-        "content": "",
-        "link": [{ "github": "" }, { "homepage": "" }],
-        "stack": []
-      }
-  ]
-}
+[
+  {
+    "id": "portfolio1",
+    "name": "TILTILE",
+    "date": "2023.04.28 ~ 2023.05.25",
+    "path": "tiltile",
+    "content": "개발자 준비생들이 간편하게 TIL작성 및 공유할 수 있는 서비스를 만들었습니다. 백엔드와 협업하여 작업한 프로젝트로 구글로그인, 전체 틸 조회 및 삭제, 북마크 기능, 반응형 CSS를 구현했습니다.",
+    "github": "https://github.com/codestates-seb/seb43_main_024/tree/client",
+    "homepage": "https://tiltile.co.kr",
+    "stack": [
+      "React",
+      "JavaScript",
+      "Zustand",
+      "axois",
+      "AWS(S3)",
+      "styled-components"
+    ]
+  },
+  {
+    "id": "portfolio2",
+    "name": "TODO",
+    "date": "2023-06",
+    "path": "todo",
+    "content": "오늘의 할 일을 정하고 완료여부를 확인할 수 있는 서비스를 만들었습니다.",
+    "github": "https://github.com/Leejungmin211/TodoApp",
+    "homepage": "",
+    "stack": ["React", "JavaScript", "Context", "axois", "postcss", "netlify"]
+  }
+]

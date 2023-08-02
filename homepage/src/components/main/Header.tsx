@@ -17,7 +17,7 @@ export default function Header({
     <header
       className={`w-full h-16 fixed z-10 flex justify-between items-center text-white ${
         currentPageNum === 2 || currentPageNum === 3
-          ? 'bg-gradient-to-r from-cyan-500 to-blue-500'
+          ? 'duration-300 ease-in-out bg-gradient-to-r from-cyan-500 to-blue-500'
           : null
       }`}
     >

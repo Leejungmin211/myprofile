@@ -18,6 +18,7 @@ const DEFAULT_TEXT = {
 const LABEL_STYLE = 'text-xl text-slate-700 xsm:text-base';
 const INPUT_STYLE =
   'h-10 rounded-md mt-1 mb-4 p-4 text-slate-700 xsm:h-8 xsm:mb-2 xsm:p-2 xsm:text-sm';
+
 export default function ContactForm() {
   const [form, setForm] = useState<Form>(DEFAULT_TEXT);
   const [banner, setBanner] = useState<BannerData | null>(null);
@@ -52,7 +53,7 @@ export default function ContactForm() {
   return (
     <section className="border-white border-opacity-50 border-2 rounded-2xl p-16 xsm:p-6">
       {banner && <Banner banner={banner} />}
-      <form onSubmit={onSubmit} className="flex flex-col w-96 xsm:w-52">
+      <form onSubmit={onSubmit} className="flex flex-col w-96 xsm:w-64">
         <label htmlFor="from" className={LABEL_STYLE}>
           From
         </label>
@@ -60,13 +61,12 @@ export default function ContactForm() {
           type="email"
           id="from"
           name="from"
-          placeholder="이메일을 입력해주세요."
+          placeholder="보내는 분의 이메일을 입력해주세요."
           required
           value={form.from}
           onChange={textChange}
           className={INPUT_STYLE}
         />
-
         <label htmlFor="subject" className={LABEL_STYLE}>
           Title
         </label>
@@ -74,7 +74,7 @@ export default function ContactForm() {
           type="text"
           id="subject"
           name="subject"
-          placeholder="메일의 제목을 입력해주세요."
+          placeholder="제목을 입력해주세요."
           required
           value={form.subject}
           onChange={textChange}
@@ -87,11 +87,11 @@ export default function ContactForm() {
           rows={10}
           id="message"
           name="message"
-          placeholder="메일의 내용을 입력해주세요."
+          placeholder="내용을 입력해주세요."
           required
           value={form.message}
           onChange={textChange}
-          className="rounded-md mt-1 mb-8 p-4 text-slate-700 xsm:p-2 xsm:text-sm"
+          className="rounded-md mt-1 mb-8 p-4 text-slate-700 xsm:p-2 xsm:text-sm xsm:mb-4"
         />
         <div className="flex justify-end">
           <button className="h-10 px-8 bg-navy rounded-md text-white font-semibold xsm:text-sm xsm:h-8 xsm:px-4 hover:opacity-80">
