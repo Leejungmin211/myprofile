@@ -1,7 +1,9 @@
+'use client';
+import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import Link from 'next/link';
 import MyPicture from '../../../public/images/mypicture.jpg';
-import TypingText from '../profile/TypingText';
+import SvgText from '../profile/SvgText';
 
 const ABOUT_DATA = [
   { link: '/#contact', text: 'jungmin.fe@gmail.com', target: '_self' },
@@ -19,11 +21,20 @@ const ABOUT_DATA = [
 ];
 
 export default function Profile() {
+  const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
   return (
-    <section>
-      <TypingText />
-      <div className="flex flex-col justify-center items-center border-white border-opacity-50 border-2 rounded-2xl px-16 py-12 xsm:p-8">
-        <div className="flex justify-center items-center xsm:flex-col">
+    <section className="w-full flex flex-col items-center justify-center">
+      {isMobile ? (
+        <div className="h-16 mb-20">
+          <SvgText text="Frontend" />
+          <SvgText text="developer" />
+        </div>
+      ) : (
+        <SvgText text="Frontend developer" />
+      )}
+
+      <div className="flex justify-center items-center border-white border-opacity-50 border-2 rounded-2xl px-16 py-12 xsm:p-8">
+        <div className="flex justify-center items-center xsm:flex-col sm:flex-col md:flex-row">
           <Image
             className="rounded-full object-cover w-60 h-60 sm:w-30 sm:h-30 xsm:w-20 xsm:h-20"
             src={MyPicture}

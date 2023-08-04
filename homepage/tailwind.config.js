@@ -16,6 +16,26 @@ module.exports = {
       screens: {
         xsm: { min: '360px', max: '639px' },
       },
+      strokeWidth: {
+        3: '3px',
+      },
+      animation: {
+        textAnimate: 'textAnimate 5s infinite alternate',
+      },
+      keyframes: {
+        textAnimate: {
+          '0%': {
+            'stroke-dasharray': '0 50%',
+            'stroke-dashoffset': '20%',
+            fill: 'hsl(0, 0%, 94%)',
+          },
+          '100%': {
+            'stroke-dasharray': '50% 0',
+            'stroke-dashoffset': '-20%',
+            fill: 'hsla(189, 68%, 75%, 0%)',
+          },
+        },
+      },
     },
   },
   plugins: [],

@@ -22,7 +22,8 @@ export default function Categories({
             {type === 'number' && (
               <span
                 className={`${
-                  item.pageNum === currentPageNum && 'text-white text-base'
+                  item.pageNum === currentPageNum &&
+                  'text-white text-base xsm:text-xs'
                 } ${
                   item.pageNum === currentPageNum &&
                   (currentPageNum === 2 || currentPageNum === 3) &&

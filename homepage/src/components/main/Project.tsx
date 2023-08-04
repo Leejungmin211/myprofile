@@ -1,4 +1,4 @@
-import CardGrid from "../portfolio/CardGrid";
+import CardGrid from '../portfolio/CardGrid';
 
 export default function Project() {
   const portfolioData = require('/data/portfolio.json');
