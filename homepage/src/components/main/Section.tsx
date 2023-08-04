@@ -16,7 +16,7 @@ export default function Section(props: SectionProps) {
         pageRefs.current[pageNum] = element!;
       }}
       className={`w-screen h-screen bg-light_skyblue p-32 flex justify-center items-center md:p-12 xsm:p-8 ${
-        (pageNum === 2 || pageNum === 3) && 'xsm:bg-white xsm:p-4'
+        (pageNum === 2 || pageNum === 3) && 'bg-white xsm:p-4'
       }`}
     >
       {pageNum === 2 || pageNum === 3 ? (
