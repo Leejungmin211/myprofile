@@ -1,5 +1,4 @@
 'use client';
-import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import Link from 'next/link';
 import MyPicture from '../../../public/images/mypicture.jpg';
@@ -21,33 +20,27 @@ const ABOUT_DATA = [
 ];
 
 export default function Profile() {
-  const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
   return (
-    <section className="w-full flex flex-col items-center justify-center">
-      {isMobile ? (
-        <div className="h-16 mb-20">
-          <SvgText text="Frontend" />
-          <SvgText text="developer" />
-        </div>
-      ) : (
-        <SvgText text="Frontend developer" />
-      )}
-
-      <div className="flex justify-center items-center border-white border-opacity-50 border-2 rounded-2xl px-16 py-12 xsm:p-8">
-        <div className="flex justify-center items-center xsm:flex-col sm:flex-col md:flex-row">
+    <section className="w-full flex items-center justify-center xsm:flex-col">
+      <div className="w-1/3 lg:mr-5 xsm:h-16 xsm:mb-20 xsm:w-full">
+        <SvgText text="Frontend" />
+        <SvgText text="developer" />
+      </div>
+      <div className="flex justify-center items-center border-white border-opacity-50 border rounded-lg shadow-white shadow-lg px-24 py-12 xsm:p-8">
+        <div className="flex flex-col justify-center items-center">
           <Image
             className="rounded-full object-cover w-60 h-60 sm:w-30 sm:h-30 xsm:w-20 xsm:h-20"
             src={MyPicture}
             alt="jungmin"
           />
-          <div className="flex flex-col text-center ml-12 p-2 text-white text-lg font-semibold xsm:ml-4">
+          <div className="flex flex-col text-center p-2 text-m_brown text-lg mt-5 font-semibold xsm:ml-4">
             {ABOUT_DATA.map((data, index) => {
               return (
                 <Link
                   key={index}
                   href={data.link}
                   target={data.target}
-                  className="rounded-3xl border-2 px-6 py-2 m-2 transition duration-0 hover:bg-white hover:bg-opacity-50 hover:text-navy xsm:text-xs hover:duration-500 ease-in-out"
+                  className="bg-white bg-opacity-50 px-6 py-2 m-2 transition duration-0 hover:bg-l_brown hover:text-white xsm:text-xs hover:duration-500 ease-in-out"
                 >
                   {data.text}
                 </Link>

@@ -27,7 +27,7 @@ export default function Categories({
                 } ${
                   item.pageNum === currentPageNum &&
                   (currentPageNum === 2 || currentPageNum === 3) &&
-                  'xsm:text-blue-200 '
+                  'xsm:text-bg_peach '
                 }
             `}
               >

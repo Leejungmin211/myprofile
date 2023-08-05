@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="border-white border-opacity-50 border-2 rounded-2xl p-16 xsm:p-6">
+    <section className="border-slate-400 border-opacity-50 border-2 rounded-2xl p-16 xsm:p-6 xsm:border">
       {banner && <Banner banner={banner} />}
       <form onSubmit={onSubmit} className="flex flex-col w-96 xsm:w-64">
         <label htmlFor="from" className={LABEL_STYLE}>
@@ -94,7 +94,7 @@ export default function ContactForm() {
           className="rounded-md mt-1 mb-8 p-4 text-slate-700 xsm:p-2 xsm:text-sm xsm:mb-4"
         />
         <div className="flex justify-end">
-          <button className="h-10 px-8 bg-navy rounded-md text-white font-semibold xsm:text-sm xsm:h-8 xsm:px-4 hover:opacity-80">
+          <button className="h-10 px-8 bg-m_brown rounded-md text-white font-semibold xsm:text-sm xsm:h-8 xsm:px-4 hover:opacity-80">
             Send me an email
           </button>
         </div>

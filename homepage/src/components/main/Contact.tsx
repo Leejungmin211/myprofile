@@ -3,7 +3,7 @@ import ContactForm from '../contact/ContactForm';
 export default function Contact() {
   return (
     <div className="flex flex-col">
-      <h1 className="text-2xl font-bold text-navy mb-6 xsm:text-base xsm:mb-2">
+      <h1 className="text-2xl font-bold text-m_brown mb-6 xsm:text-base xsm:mb-2">
         CONTACT ME
       </h1>
       <ContactForm />

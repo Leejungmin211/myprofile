@@ -11,7 +11,14 @@ module.exports = {
         navy: '#0a0a7c',
         yellow_green: '#f7ffe5',
         violet: '#5C469C',
-        light_skyblue: '#98c1fa',
+        l_brown: '#897d78',
+        m_brown: '#6f615c',
+        brown: '#45372f',
+        pink: '#e17877',
+        beige: '#f5f1ee',
+        bg_beige: '#f4eae5f0',
+        bg_peach: '#f9d8ced9',
+        bg_gray: '#e2dae4',
       },
       screens: {
         xsm: { min: '360px', max: '639px' },
@@ -27,7 +34,7 @@ module.exports = {
           '0%': {
             'stroke-dasharray': '0 50%',
             'stroke-dashoffset': '20%',
-            fill: 'hsl(0, 0%, 94%)',
+            fill: 'hsl(0, 100%, 79%)',
           },
           '100%': {
             'stroke-dasharray': '50% 0',

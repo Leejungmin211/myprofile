@@ -15,14 +15,14 @@ export default function Header({
 }: PageCategory) {
   return (
     <header
-      className={`w-full h-16 fixed z-10 flex justify-between items-center text-white ${
+      className={`w-full h-16 fixed z-10 flex justify-between items-center text-brown ${
         currentPageNum === 2 || currentPageNum === 3
-          ? 'duration-300 ease-in-out bg-gradient-to-r from-cyan-500 to-blue-500'
+          ? 'duration-300 ease-in-out bg-beige'
           : null
       }`}
     >
       <Link href="/">
-        <h1 className="text-2xl font-bold xsm:text-xl px-12 xsm:px-8">
+        <h1 className="text-2xl font-bold xsm:text-xl px-12 xsm:px-6">
           Leejungmin
         </h1>
       </Link>
