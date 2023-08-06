@@ -21,7 +21,8 @@ module.exports = {
         bg_gray: '#e2dae4',
       },
       screens: {
-        xsm: { min: '360px', max: '639px' },
+        xsm: { min: '360px', max: '767px' },
+        xlg: { min: '1500px' },
       },
       strokeWidth: {
         3: '3px',

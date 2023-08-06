@@ -22,7 +22,7 @@ export default function Header({
       }`}
     >
       <Link href="/">
-        <h1 className="text-2xl font-bold xsm:text-xl px-12 xsm:px-6">
+        <h1 className="text-2xl font-bold xsm:text-lg px-12 xsm:px-6">
           Leejungmin
         </h1>
       </Link>

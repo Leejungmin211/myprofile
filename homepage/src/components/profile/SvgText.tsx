@@ -21,9 +21,9 @@ export default function SvgText({ text }: { text: string }) {
         ></rect>
         <text
           x="50%"
-          y="60%"
+          y="70%"
           textAnchor="middle"
-          className="tracking-wide stroke-pink font-extrabold stroke-3 animate-textAnimate lg:text-8xl md:text-6xl xsm:text-5xl xsm:stroke-1"
+          className="tracking-wide stroke-pink font-extrabold stroke-3 animate-textAnimate xlg:text-9xl lg:text-8xl md:text-6xl xsm:text-5xl xsm:stroke-1"
         >
           {text}
         </text>

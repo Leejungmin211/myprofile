@@ -38,7 +38,7 @@ export default function Card({ data }: { data: PortfolioData }) {
         <ul className="flex items-center gap-3 flex-wrap my-4">
           {stack.map((name, index) => (
             <li key={index}>
-              <StackIcon name={name} />
+              <StackIcon name={name} width={20} height={20} />
             </li>
           ))}
         </ul>

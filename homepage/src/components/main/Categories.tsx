@@ -23,19 +23,14 @@ export default function Categories({
               <span
                 className={`${
                   item.pageNum === currentPageNum &&
-                  'text-white text-base xsm:text-xs'
-                } ${
-                  item.pageNum === currentPageNum &&
-                  (currentPageNum === 2 || currentPageNum === 3) &&
-                  'xsm:text-bg_peach '
-                }
-            `}
+                  'text-rose-300 text-base xsm:text-xs'
+                }`}
               >
                 ●
               </span>
             )}
             {type === 'string' && (
-              <span className="hover:text-slate-600 transition duration-0 hover:duration-500 ease-in-out">
+              <span className="hover:text-rose-400 transition duration-0 hover:duration-500 ease-in-out">
                 {item.name}
               </span>
             )}

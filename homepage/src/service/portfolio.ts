@@ -12,6 +12,11 @@ export interface PortfolioData {
   stack: string[];
 }
 
+export interface TeckStackData {
+   id: string;
+  name: string;
+}
+
 export async function getPortfolioData(): Promise<PortfolioData[]> {
   const filePath = path.join(process.cwd(), 'data', 'portfolio.json');
   return readFile(filePath, 'utf-8')

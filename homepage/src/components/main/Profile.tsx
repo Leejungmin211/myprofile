@@ -21,26 +21,26 @@ const ABOUT_DATA = [
 
 export default function Profile() {
   return (
-    <section className="w-full flex items-center justify-center xsm:flex-col">
-      <div className="w-1/3 lg:mr-5 xsm:h-16 xsm:mb-20 xsm:w-full">
+    <section className="w-full flex items-center justify-center xsm:flex-col md:flex-col lg:flex-row">
+      <div className="w-1/2 xsm:h-14 xsm:mb-20 xsm:mt-10 xsm:w-full md:h-20 md:mb-24 lg:h-full lg:m-0">
         <SvgText text="Frontend" />
         <SvgText text="developer" />
       </div>
-      <div className="flex justify-center items-center border-white border-opacity-50 border rounded-lg shadow-white shadow-lg px-24 py-12 xsm:p-8">
+      <div className="flex justify-center items-center border-white border-opacity-50 border rounded-lg shadow-white/70 shadow-2xl xlg:px-24 xlg:py-12 md:px-20 md:py-8 xsm:p-6">
         <div className="flex flex-col justify-center items-center">
           <Image
-            className="rounded-full object-cover w-60 h-60 sm:w-30 sm:h-30 xsm:w-20 xsm:h-20"
+            className="rounded-full object-cover lg:w-60 lg:h-60 md:w-32 md:h-32 xsm:w-20 xsm:h-20"
             src={MyPicture}
             alt="jungmin"
           />
-          <div className="flex flex-col text-center p-2 text-m_brown text-lg mt-5 font-semibold xsm:ml-4">
+          <div className="flex flex-col text-center p-2 text-m_brown mt-5 font-semibold xsm:mt-2">
             {ABOUT_DATA.map((data, index) => {
               return (
                 <Link
                   key={index}
                   href={data.link}
                   target={data.target}
-                  className="bg-white bg-opacity-50 px-6 py-2 m-2 transition duration-0 hover:bg-l_brown hover:text-white xsm:text-xs hover:duration-500 ease-in-out"
+                  className="bg-white bg-opacity-50 px-6 py-2 m-2 transition duration-0 hover:bg-l_brown hover:text-white lg:text-lg md:text-base xsm:text-xs xsm:m-1 hover:duration-500 ease-in-out"
                 >
                   {data.text}
                 </Link>
