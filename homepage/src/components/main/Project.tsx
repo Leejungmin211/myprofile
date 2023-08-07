@@ -3,9 +3,9 @@ import CardGrid from '../portfolio/CardGrid';
 export default function Project() {
   const portfolioData = require('/data/portfolio.json');
   return (
-    <section className="mt-36 xsm:mt-0">
-      <h1 className="text-2xl font-semibold text-center text-slate-700 mb-16 xsm:text-base xsm:mb-2">
-        PROJECT
+    <section>
+      <h1 className="xlg:text-5xl md:text-4xl sm:text-2xl font-bold text-right text-slate-700 mb-16 xsm:text-2xl xsm:mb-8">
+        #PROJECT
       </h1>
       <CardGrid portfolioData={portfolioData} />
     </section>

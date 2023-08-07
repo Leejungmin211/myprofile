@@ -26,10 +26,10 @@ export default function Profile() {
         <SvgText text="Frontend" />
         <SvgText text="developer" />
       </div>
-      <div className="flex justify-center items-center border-white border-opacity-50 border rounded-lg shadow-white/70 shadow-2xl xlg:px-24 xlg:py-12 md:px-20 md:py-8 xsm:p-6">
+      <div className="flex justify-center items-center border-white border-opacity-50 border rounded-xl shadow-white/80 shadow-2xl xlg:px-24 xlg:py-12 md:px-20 md:py-8 xsm:p-6">
         <div className="flex flex-col justify-center items-center">
           <Image
-            className="rounded-full object-cover lg:w-60 lg:h-60 md:w-32 md:h-32 xsm:w-20 xsm:h-20"
+            className="rounded-full object-cover lg:w-52 lg:h-52 md:w-32 md:h-32 xsm:w-20 xsm:h-20"
             src={MyPicture}
             alt="jungmin"
           />

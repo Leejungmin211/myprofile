@@ -9,10 +9,10 @@ export default function Card({ data }: { data: PortfolioData }) {
   const { name, date, path, content, homepage, github, stack } = data;
 
   return (
-    <div className="rounded-2xl overflow-hidden max-w-md border border-slate-200 p-4 transition duration-100 hover:shadow-xl hover:-translate-y-6 hover:duration-300 xsm:p-2 xsm:hover:-translate-y-0">
+    <div className="rounded-2xl overflow-hidden max-w-md border border-slate-200 p-4 transition duration-300 hover:shadow-xl hover:-translate-y-6 xsm:p-2 xsm:hover:-translate-y-0">
       <Link href={homepage} target="_blank">
         <Image
-          className="rounded-t-2xl border border-slate-200"
+          className="rounded-t-2xl border border-slate-200 xsm:hidden"
           src={`/images/portfolio/${path}.jpg`}
           alt={name}
           width={450}
