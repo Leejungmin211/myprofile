@@ -12,6 +12,8 @@ import HtmlIcon from '../../../public/images/icon/html.svg';
 import NextIcon from '../../../public/images/icon/next.svg';
 import ReactQueryIcon from '../../../public/images/icon/reactquery.svg';
 import TypeScriptIcon from '../../../public/images/icon/typescript.svg';
+import GithubIcon from '../../../public/images/icon/github-mark.svg';
+import TailwindcssIcon from '../../../public/images/icon/tailwindcss.svg';
 import Image from 'next/image';
 
 interface Icons {
@@ -33,18 +35,27 @@ const icons: Icons = {
   TypeScript: TypeScriptIcon,
   'React Query': ReactQueryIcon,
   'Next.js': NextIcon,
+  Github: GithubIcon,
+  tailwindcss: TailwindcssIcon,
 };
 
 export default function StackIcon({
   name,
   width,
   height,
+  onClick,
 }: {
   name: string;
   width: number;
   height: number;
+  onClick?: () => void;
 }) {
   const IconComponent = icons[name];
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
   return (
     <>
       {name && IconComponent ? (
@@ -53,6 +64,8 @@ export default function StackIcon({
           alt={IconComponent}
           width={width}
           height={height}
+          onClick={handleClick}
+          className="cursor-pointer hover:scale-110 hover:transition duration-300"
         />
       ) : null}
     </>

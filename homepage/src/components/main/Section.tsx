@@ -25,7 +25,7 @@ export default function Section(props: SectionProps) {
       {pageNum === 2 || pageNum === 3 ? (
         <div
           className={`rounded-2xl flex justify-center items-center ${
-            pageNum === 2 && 'xsm:mb-10'
+            pageNum === 2 && ''
           } ${pageNum === 3 && 'xsm:mb-2'}`}
         >
           <props.component />

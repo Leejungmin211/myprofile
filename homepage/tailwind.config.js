@@ -15,10 +15,14 @@ module.exports = {
         m_brown: '#6f615c',
         brown: '#45372f',
         pink: '#e17877',
+        babypink: '#ffe3e3',
         beige: '#f5f1ee',
         bg_beige: '#f4eae5f0',
         bg_peach: '#f9d8ced9',
         bg_gray: '#e2dae4',
+      },
+      borderWidth: {
+        20: '20px',
       },
       screens: {
         xsm: { min: '360px', max: '767px' },

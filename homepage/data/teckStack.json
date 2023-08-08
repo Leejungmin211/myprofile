@@ -1,57 +1,67 @@
 [
-    {
-      "id": 1,
-      "name": "HTML",
-      "description": ""
-    },
-    {
-        "id": 2,
-        "name": "CSS",
-        "description": ""
-      },
-      {
-        "id": 3,
-        "name": "JavaScript",
-        "description": ""
-      },
-      {
-        "id": 4,
-        "name": "TypeScript",
-        "description": ""
-      },
-      {
-        "id": 5,
-        "name": "React",
-        "description": ""
-      },
-      {
-        "id": 6,
-        "name": "zustand",
-        "description": ""
-      },
-      {
-        "id": 7,
-        "name": "Next.js",
-        "description": ""
-      },
-      {
-        "id": 8,
-        "name": "axois",
-        "description": ""
-      },
-      {
-        "id": 9,
-        "name": "Zustand",
-        "description": ""
-      },
-      {
-        "id": 10,
-        "name": "React Query",
-        "description": ""
-      },
-      {
-        "id": 11,
-        "name": "styled-components",
-        "description": ""
-      }
-  ]
+  {
+    "id": 1,
+    "name": "HTML",
+    "description": ""
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "description": ""
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "description": ""
+  },
+  {
+    "id": 4,
+    "name": "TypeScript",
+    "description": ""
+  },
+  {
+    "id": 5,
+    "name": "React",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "name": "Zustand",
+    "description": ""
+  },
+  {
+    "id": 7,
+    "name": "Next.js",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "name": "axois",
+    "description": ""
+  },
+  {
+    "id": 9,
+    "name": "React Query",
+    "description": ""
+  },
+  {
+    "id": 10,
+    "name": "styled-components",
+    "description": ""
+  },
+  {
+    "id": 11,
+    "name": "tailwindcss",
+    "description": ""
+  },
+  {
+    "id": 12,
+    "name": "Github",
+    "description": ""
+  },
+  {
+    "id": 13,
+    "name": "AWS(S3)",
+    "description": ""
+  }
+]

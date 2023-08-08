@@ -24,10 +24,22 @@ export default function Card({ data }: { data: PortfolioData }) {
           <h2 className="text-lg font-semibold xsm:text-base">{name}</h2>
           <div className="flex gap-3">
             <a href={homepage} target="_blank">
-              <Image src={HomeIcon} alt="homepage" width={25} height={25} />
+              <Image
+                src={HomeIcon}
+                alt="homepage"
+                width={25}
+                height={25}
+                className="hover:scale-110"
+              />
             </a>
             <a href={github} target="_blank">
-              <Image src={GithubIcon} alt="homepage" width={25} height={25} />
+              <Image
+                src={GithubIcon}
+                alt="homepage"
+                width={25}
+                height={25}
+                className="hover:scale-110"
+              />
             </a>
           </div>
         </div>
