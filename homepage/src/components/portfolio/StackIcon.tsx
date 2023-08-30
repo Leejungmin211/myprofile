@@ -16,6 +16,7 @@ import GithubIcon from '../../../public/images/icon/github-mark.svg';
 import TailwindcssIcon from '../../../public/images/icon/tailwindcss.svg';
 import FirebaseIcon from '../../../public/images/icon/firebase.svg';
 import VercelIcon from '../../../public/images/icon/vercel.svg';
+import FigmaIcon from '../../../public/images/icon/figma.svg';
 import Image from 'next/image';
 
 interface Icons {
@@ -33,6 +34,7 @@ const icons: Icons = {
   Zustand: ZustandIcon,
   netlify: NetlifyIcon,
   firebase: FirebaseIcon,
+  figma: FigmaIcon,
   HTML: HtmlIcon,
   CSS: CssIcon,
   vercel: VercelIcon,
@@ -48,11 +50,13 @@ export default function StackIcon({
   width,
   height,
   onClick,
+  type,
 }: {
   name: string;
   width: number;
   height: number;
   onClick?: () => void;
+  type?: string;
 }) {
   const IconComponent = icons[name];
   const handleClick = () => {
@@ -64,9 +68,11 @@ export default function StackIcon({
     <>
       {name && IconComponent ? (
         <div className="relative inline-block group">
-          <div className="hidden text-sm absolute top-0 -translate-y-10 left-1/2 -translate-x-1/2 my-2 bg-pink px-2 py-1 rounded-md text-white overflow-hidden group-hover:inline-block">
-            <div className="truncate">{name}</div>
-          </div>
+          {type === 'tag' && (
+            <div className="hidden text-sm absolute top-0 -translate-y-10 left-1/2 -translate-x-1/2 my-2 bg-pink px-2 py-1 rounded-md text-white overflow-hidden group-hover:inline-block">
+              <div className="truncate">{name}</div>
+            </div>
+          )}
           <Image
             src={IconComponent}
             alt={IconComponent}

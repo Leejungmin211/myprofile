@@ -13,8 +13,9 @@ export interface PortfolioData {
 }
 
 export interface TeckStackData {
-   id: string;
+  id: string;
   name: string;
+  description: string;
 }
 
 export async function getPortfolioData(): Promise<PortfolioData[]> {

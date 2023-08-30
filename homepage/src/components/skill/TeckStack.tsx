@@ -26,6 +26,7 @@ export default function TeckStack({
               width={50}
               height={50}
               onClick={() => handelClick(stack)}
+              type="tag"
             />
           </li>
         ))}

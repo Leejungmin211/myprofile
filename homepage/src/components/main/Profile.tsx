@@ -23,7 +23,7 @@ export default function Profile() {
   return (
     <section className="w-full flex items-center justify-center xsm:flex-col md:flex-col lg:flex-row">
       <div className="w-1/2 xsm:h-14 xsm:mb-20 xsm:mt-10 xsm:w-full md:h-20 md:mb-24 lg:h-full lg:m-0">
-        <SvgText text="Frontend" />
+        <SvgText text="Front-end" />
         <SvgText text="developer" />
       </div>
       <div className="flex justify-center items-center border-white border-opacity-50 border rounded-xl shadow-white/80 shadow-2xl xlg:px-24 xlg:py-12 md:px-20 md:py-8 xsm:p-6">

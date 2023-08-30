@@ -26,6 +26,7 @@ module.exports = {
       },
       height: {
         300: '300px',
+        120: '120px',
       },
       borderWidth: {
         20: '20px',

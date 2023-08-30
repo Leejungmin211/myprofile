@@ -2,66 +2,71 @@
   {
     "id": 1,
     "name": "HTML",
-    "description": ""
+    "description": "HTML 태그 및 구조를 이해하고 시멘틱 태그를 사용하여 웹 문서의 구조와 의미를 더 명확하게 전달할 수 있습니다."
   },
   {
     "id": 2,
     "name": "CSS",
-    "description": ""
+    "description": "기본적인 스타일링, 선택자, 박스 모델, 레이아웃 등을 이해하고 있으며, 반응형 디자인도 구현할 수 있습니다."
   },
   {
     "id": 3,
     "name": "JavaScript",
-    "description": ""
+    "description": "기본 문법과 데이터 타입을 이해하고, 변수, 함수, 조건문, 반복문을 다룰 수 있으며 자바스크립트의 작동 원리를 파악하고 있습니다."
   },
   {
     "id": 4,
     "name": "TypeScript",
-    "description": ""
+    "description": "정적 타입 시스템을 활용하여 코드의 안정성을 높이고 인터페이스와 타입 정의를 할 수 있습니다."
   },
   {
     "id": 5,
     "name": "React",
-    "description": ""
+    "description": "React 컴포넌트를 작성하고, 상태(state)와 속성(props)을 관리하며, Context API를 활용하여 컴포넌트 간 데이터를 공유하고 전달한 경험이 있습니다. "
   },
   {
     "id": 6,
     "name": "Zustand",
-    "description": ""
+    "description": "상태 관리 라이브러리를 사용하여 상태를 전역으로 관리할 수 있습니다."
   },
   {
     "id": 7,
     "name": "Next.js",
-    "description": ""
+    "description": "Next.js 13 버전을 활용하여 최신 업데이트된 내용들을 이해하고 있으며, 서버 사이드 렌더링(SSR) 및 검색 엔진 최적화(SEO)와 관련된 개선 사항을 파악하고 적용할 수 있습니다."
   },
   {
     "id": 8,
     "name": "axois",
-    "description": ""
+    "description": "HTTP 요청 라이브러리인 axios를 사용하여 데이터를 가져올 수 있습니다."
   },
   {
     "id": 9,
     "name": "React Query",
-    "description": ""
+    "description": "데이터를 효과적으로 관리하고 캐싱하는 데 사용되는 React Query를 활용하여 API를 조작하고 다룰 수 있습니다."
   },
   {
     "id": 10,
     "name": "styled-components",
-    "description": ""
+    "description": "CSS-in-JS 라이브러리를 사용하여 컴포넌트 스타일링을 할 수 있습니다."
   },
   {
     "id": 11,
     "name": "tailwindcss",
-    "description": ""
+    "description": "tailwindcss를 활용하여 스타일을 적용하고 커스터마이징할 수 있습니다."
   },
   {
     "id": 12,
     "name": "Github",
-    "description": ""
+    "description": "GitHub를 활용하여 팀 프로젝트의 코드 관리와 협업을 경험했으며, 풀 리퀘스트를 통한 코드 리뷰와 통합 프로세스에 참여한 경험이 있습니다."
   },
   {
     "id": 13,
     "name": "AWS(S3)",
-    "description": ""
+    "description": "S3를 활용하여 파일 스토리지를 관리하고, 정적 파일을 호스팅한 경험이 있으며 백엔드와 배포 과정도 진행한 적이 있습니다."
+  },
+  {
+    "id": 14,
+    "name": "figma",
+    "description": "사용자 인터페이스(UI) 및 사용자 경험(UX) 디자인을 생성, 편집, 공유할 수 있습니다."
   }
 ]
