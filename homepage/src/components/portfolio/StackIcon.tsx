@@ -14,6 +14,8 @@ import ReactQueryIcon from '../../../public/images/icon/reactquery.svg';
 import TypeScriptIcon from '../../../public/images/icon/typescript.svg';
 import GithubIcon from '../../../public/images/icon/github-mark.svg';
 import TailwindcssIcon from '../../../public/images/icon/tailwindcss.svg';
+import FirebaseIcon from '../../../public/images/icon/firebase.svg';
+import VercelIcon from '../../../public/images/icon/vercel.svg';
 import Image from 'next/image';
 
 interface Icons {
@@ -30,8 +32,10 @@ const icons: Icons = {
   'styled-components': StyledcomponentsIcon,
   Zustand: ZustandIcon,
   netlify: NetlifyIcon,
+  firebase: FirebaseIcon,
   HTML: HtmlIcon,
   CSS: CssIcon,
+  vercel: VercelIcon,
   TypeScript: TypeScriptIcon,
   'React Query': ReactQueryIcon,
   'Next.js': NextIcon,
@@ -59,14 +63,19 @@ export default function StackIcon({
   return (
     <>
       {name && IconComponent ? (
-        <Image
-          src={IconComponent}
-          alt={IconComponent}
-          width={width}
-          height={height}
-          onClick={handleClick}
-          className="cursor-pointer hover:scale-110 hover:transition duration-300"
-        />
+        <div className="relative inline-block group">
+          <div className="hidden text-sm absolute top-0 -translate-y-10 left-1/2 -translate-x-1/2 my-2 bg-pink px-2 py-1 rounded-md text-white overflow-hidden group-hover:inline-block">
+            <div className="truncate">{name}</div>
+          </div>
+          <Image
+            src={IconComponent}
+            alt={IconComponent}
+            width={width}
+            height={height}
+            onClick={handleClick}
+            className="cursor-pointer hover:scale-110 hover:transition duration-300"
+          />
+        </div>
       ) : null}
     </>
   );
