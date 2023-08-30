@@ -21,6 +21,12 @@ module.exports = {
         bg_peach: '#f9d8ced9',
         bg_gray: '#e2dae4',
       },
+      width: {
+        450: '450px',
+      },
+      height: {
+        300: '300px',
+      },
       borderWidth: {
         20: '20px',
       },
@@ -37,14 +43,10 @@ module.exports = {
       keyframes: {
         textAnimate: {
           '0%': {
-            'stroke-dasharray': '0 50%',
-            'stroke-dashoffset': '20%',
             fill: 'hsl(0, 100%, 79%)',
           },
           '100%': {
-            'stroke-dasharray': '50% 0',
-            'stroke-dashoffset': '-20%',
-            fill: 'hsla(189, 68%, 75%, 0%)',
+            fill: 'hsl(48.75, 198%, 98%)',
           },
         },
       },

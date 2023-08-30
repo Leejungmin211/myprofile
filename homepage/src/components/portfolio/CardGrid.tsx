@@ -7,7 +7,7 @@ export default function CardGrid({
   portfolioData: PortfolioData[];
 }) {
   return (
-    <ul className="w-full flex justify-center items-center gap-12 xsm:flex-col xsm:gap-8">
+    <ul className="w-full gap-8 flex justify-center items-center xl:gap-12 xsm:flex-col xsm:gap-3">
       {portfolioData.map((data) => (
         <li key={data.id}>
           <Card data={data} />
