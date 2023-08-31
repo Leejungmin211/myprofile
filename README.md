@@ -10,14 +10,8 @@
 <br/>
 <br/>
 
-## ✨ Pages
-|****|
-|:---:|
-|<img width="80%" alt="" src=""/>|
-|****|
-|<img width="80%" alt="" src=""/>|
-|****|
-|<img width="80%" src=""/>|
+## ✨ Demo
+|<img width="80%" alt="portfolio gif" src=""/>|
 
 <br />
 
