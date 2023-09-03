@@ -30,7 +30,11 @@ export default function Categories({
               </span>
             )}
             {type === 'string' && (
-              <span className="hover:text-rose-400 transition duration-0 hover:duration-500 ease-in-out">
+              <span
+                className={`hover:text-rose-400 transition duration-0 hover:duration-500 ease-in-out ${
+                  item.pageNum === currentPageNum && 'text-rose-400'
+                }`}
+              >
                 {item.name}
               </span>
             )}
