@@ -1,12 +1,16 @@
 export default function SvgText({ text }: { text: string }) {
   return (
-    <div className="w-full h-full">
-      <svg width="100%" height="100%">
+    <div className="w-full h-full relative overflow-hidden">
+      <svg
+        width="100%"
+        height="100%"
+        className="absolute translate-y-72 animate-moveTextAnimate"
+      >
         <text
           x="50%"
           y="70%"
           textAnchor="middle"
-          className="tracking-wide font-extrabold animate-textAnimate xlg:text-9xl lg:text-8xl md:text-6xl xsm:text-5xl"
+          className="text-6xl tracking-wide font-extrabold animate-textAnimate xlg:text-140 lg:text-8xl xsm:text-5xl"
         >
           {text}
         </text>

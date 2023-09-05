@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import MyPicture from '../../../public/images/mypicture.jpg';
 import SvgText from '../profile/SvgText';
+import RoseImage from '../../../public/images/rose.png';
 
 const ABOUT_DATA = [
   { link: '/#contact', text: 'jungmin.fe@gmail.com', target: '_self' },
@@ -21,10 +22,31 @@ const ABOUT_DATA = [
 
 export default function Profile() {
   return (
-    <section className="w-full flex items-center justify-center xsm:flex-col md:flex-col lg:flex-row">
-      <div className="w-1/2 xsm:h-14 xsm:mb-20 xsm:mt-10 xsm:w-full md:h-20 md:mb-24 lg:h-full lg:m-0">
-        <SvgText text="Front-end" />
-        <SvgText text="developer" />
+    <section className="w-full h-full flex flex-col items-center justify-center lg:flex-row">
+      <div className="w-1/2 h-1/2 flex flex-col justify-center xsm:w-full xsm:h-2/5">
+        <div className="relative xsm:flex xsm:justify-center xsm:w-full xlg:mb-10">
+          <div className="relative h-20 overflow-hidden lg:h-48 xsm:w-16">
+            <Image
+              src={RoseImage}
+              alt="rose"
+              width={150}
+              className="w-24 absolute opacity-80 translate-y-72 animate-moveImageAnimate lg:w-120 xlg:w-150"
+            />
+          </div>
+          <div className="w-full h-20 top-3 absolute z-10 lg:h-48 xlg:h-64 xlg:top-5">
+            <SvgText text="FRONTEND" />
+          </div>
+        </div>
+        <div className="relative h-36 overflow-hidden md:mt-5 lg:h-48 xlg:h-48">
+          <p className="absolute px-4 leading-6 text-justify text-brown translate-y-72 animate-moveContentAnimate text-sm xsm:leading-5 xsm:text-xs xsm:px-8 lg:text-lg lg:leading-8 xlg:px-14 xlg:text-xl xlg:leading-10">
+            깊이 있는 <span className="text-rose-400 font-bold">Frontend</span>
+            개발을 향해 나아가는 주니어 개발자입니다. 항상 새로운 것을 배우려는
+            열린 자세를 가지고 있으며, 분야를 가리지 않고 개발에 대한 관심을
+            적극적으로 확장하며 성장하고자 합니다. UI/UX 디자인에도 많은 관심을
+            가지고 있으며, 웹 사이트와 애플리케이션 사용자들의 편의성을 고민하고
+            개선하려 노력하고 있습니다.
+          </p>
+        </div>
       </div>
       <div className="flex justify-center items-center border-white border-opacity-50 border rounded-xl shadow-white/80 shadow-2xl xlg:px-24 xlg:py-12 md:px-20 md:py-8 xsm:p-6">
         <div className="flex flex-col justify-center items-center">
