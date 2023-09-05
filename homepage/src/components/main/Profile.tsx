@@ -41,10 +41,10 @@ export default function Profile() {
           <p className="absolute px-4 leading-6 text-justify text-brown translate-y-72 animate-moveContentAnimate text-sm xsm:leading-5 xsm:text-xs xsm:px-8 lg:text-lg lg:leading-8 xlg:px-14 xlg:text-xl xlg:leading-10">
             깊이 있는 <span className="text-rose-400 font-bold">Frontend</span>
             개발을 향해 나아가는 주니어 개발자입니다. 항상 새로운 것을 배우려는
-            열린 자세를 가지고 있으며, 분야를 가리지 않고 개발에 대한 관심을
-            적극적으로 확장하며 성장하고자 합니다. UI/UX 디자인에도 많은 관심을
-            가지고 있으며, 웹 사이트와 애플리케이션 사용자들의 편의성을 고민하고
-            개선하려 노력하고 있습니다.
+            열린 자세를 가지고 있으며, 분야를 가리지 않고 개발에 대해서
+            적극적으로 확장하며 성장하고자 합니다. 프론트엔드에서 필요한 UI/UX
+            부분에도 관심을 가지고 웹 사이트와 애플리케이션 사용자들의 편의성을
+            고민하고 개선하려 노력하고 있습니다.
           </p>
         </div>
       </div>
