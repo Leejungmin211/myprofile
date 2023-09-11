@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="p-10 border-slate-400 border-opacity-50 border-2 rounded-2xl xl:p-16 xsm:p-6 xsm:border">
+    <section className="p-10 border-slate-400 border-opacity-50 border-2 rounded-2xl xl:p-12 xsm:p-6 xsm:border">
       {banner && <Banner banner={banner} />}
       <form onSubmit={onSubmit} className="w-80 flex flex-col xl:w-96 xsm:w-64">
         <label htmlFor="from" className={LABEL_STYLE}>
