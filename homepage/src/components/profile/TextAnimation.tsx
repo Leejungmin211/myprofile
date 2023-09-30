@@ -55,7 +55,7 @@ export default function TextAnimation({ initialValue, nextText }: Props) {
   return (
     <>
       <h1
-        className="text-animation"
+        className="text-5xl inline-block font-bold uppercase hover:text-rose-400 p-10 xsm:text-4xl xlg:text-7xl"
         onMouseOver={mouseOverHandler}
         onMouseLeave={mouseLeaveHandler}
       >

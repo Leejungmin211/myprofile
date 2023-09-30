@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import SvgText from '../profile/TextAnimation';
+import TextAnimation from '../profile/TextAnimation';
 
 const ABOUT_DATA = [
   { link: '/#contact', text: 'jungmin.fe@gmail.com', target: '_self' },
@@ -21,9 +21,10 @@ export default function Profile() {
   return (
     <section className="w-full h-full flex flex-col items-center justify-center">
       <div className="w-full flex flex-col justify-center">
-        <div className="w-full h-20 top-3 z-10 lg:h-48 xlg:h-64 xlg:top-5">
-          <SvgText initialValue="FRONTEND DEVELOPER" nextText="Leejungmin" />
-        </div>
+        <TextAnimation
+          initialValue="FRONTEND DEVELOPER"
+          nextText="Leejungmin"
+        />
       </div>
       <div className="w-3/4 flex flex-col justify-center items-center border-white border-opacity-50 border rounded-xl shadow-white/80 shadow-2xl xlg:flex-row xlg:px-16 xlg:py-12 md:px-12 md:py-8 xsm:p-8 xlg:w-1/2 lg:w-1/2">
         <p className="text-justify text-sm leading-6 text-semibold xlg:mr-10 xlg:leading-9 xlg:text-lg">
