@@ -15,7 +15,7 @@ const DEFAULT_TEXT = {
   message: '',
 };
 
-const LABEL_STYLE = 'text-lg text-slate-700 xl:text-xl xsm:text-base';
+const LABEL_STYLE = 'text-lg text-slate-200 xl:text-xl xsm:text-base';
 const INPUT_STYLE =
   'h-9 mb-3 p-3 rounded-md mt-1 text-slate-700 xl:h-10 xl:mb-4 xl:p-4 xsm:h-8 xsm:mb-2 xsm:p-2 xsm:text-sm';
 
@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="p-10 border-slate-400 border-opacity-50 border-2 rounded-2xl xl:p-16 xsm:p-6 xsm:border">
+    <section className="p-8 border-slate-100 border-opacity-50 border-2 rounded-2xl xl:p-12 xsm:p-6 xsm:border">
       {banner && <Banner banner={banner} />}
       <form onSubmit={onSubmit} className="w-80 flex flex-col xl:w-96 xsm:w-64">
         <label htmlFor="from" className={LABEL_STYLE}>

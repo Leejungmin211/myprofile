@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function TextAnimation({ initialValue, nextText }: Props) {
-  const [text, setText] = useState(initialValue);
+  const [text, setText] = useState<string>(initialValue);
   const [write, setWrite] = useState<number | null>(null);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export default function TextAnimation({ initialValue, nextText }: Props) {
   return (
     <>
       <h1
-        className="text-5xl inline-block font-bold uppercase hover:text-rose-400 p-10 xsm:text-4xl xlg:text-7xl"
+        className="font-sans text-5xl inline-block font-bold uppercase tracking-wide hover:text-violet xsm:text-4xl xlg:text-7xl"
         onMouseOver={mouseOverHandler}
         onMouseLeave={mouseLeaveHandler}
       >

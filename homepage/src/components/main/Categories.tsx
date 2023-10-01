@@ -20,23 +20,21 @@ export default function Categories({
             className="cursor-pointer text-center"
           >
             {type === 'number' && (
-              <span
-                className={`${
+              <div
+                className={`w-3 h-3 border rounded-full border-slate-500 my-3 ${
                   item.pageNum === currentPageNum &&
-                  'text-rose-300 text-base xsm:text-xs'
+                  'bg-clean_white border-clean_white'
                 }`}
-              >
-                ●
-              </span>
+              ></div>
             )}
             {type === 'string' && (
-              <span
-                className={`hover:text-rose-400 transition duration-0 hover:duration-500 ease-in-out ${
-                  item.pageNum === currentPageNum && 'text-rose-400'
+              <div
+                className={`hover:text-violet ${
+                  item.pageNum === currentPageNum && 'text-violet'
                 }`}
               >
                 {item.name}
-              </span>
+              </div>
             )}
           </li>
         ))}

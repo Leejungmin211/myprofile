@@ -7,6 +7,7 @@ import Profile from './Profile';
 import Skill from './Skill';
 import Project from './Project';
 import Contact from './Contact';
+import PageCounter from '../profile/PageCounter';
 
 export interface pageObj {
   pageNum: number;
@@ -75,7 +76,8 @@ export default function FullPage() {
         onClick={handlePointClick}
         currentPageNum={currentPageNum}
       />
-      <main className="relative">
+      <main className="relative ">
+        <PageCounter currentPageNum={currentPageNum} />
         {pageArray.map((item, index) => {
           return (
             <Section
@@ -87,7 +89,7 @@ export default function FullPage() {
             />
           );
         })}
-        <ul className="flex flex-col space-y-3 fixed top-96 right-10 z-10 text-xs text-slate-500 xsm:right-3 xsm:top-1/2 xsm:space-y-1">
+        <ul className="flex flex-col fixed top-96 right-10 z-10 xsm:right-3 xsm:top-1/2">
           <Categories
             pageArray={pageArray}
             onClick={handlePointClick}

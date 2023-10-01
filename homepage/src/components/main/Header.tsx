@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import Categories from './Categories';
 import { pageObj } from './FullPage';
+import Logo from '../../../public/images/logo.jpg';
 
 export interface PageCategory {
   pageArray: pageObj[];
@@ -15,18 +17,12 @@ export default function Header({
 }: PageCategory) {
   return (
     <header
-      className={`w-full h-16 fixed z-10 flex justify-between items-center text-brown ${
-        currentPageNum === 2 || currentPageNum === 3
-          ? 'duration-300 ease-in-out bg-beige'
-          : null
-      }`}
+      className="w-full fixed z-10 p-16 flex justify-between items-center"
     >
       <Link href="/">
-        <h1 className="text-2xl font-bold xsm:text-lg px-12 xsm:px-6">
-          Leejungmin
-        </h1>
+        <Image src={Logo} alt="logo" width="130" />
       </Link>
-      <ul className="flex gap-10 absolute right-8 text-lg font-semibold xsm:hidden">
+      <ul className="flex gap-10 text-sm font-extrabold tracking-wide xsm:hidden">
         <Categories
           pageArray={pageArray}
           onClick={onClick}

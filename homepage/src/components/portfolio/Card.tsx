@@ -20,7 +20,7 @@ export default function Card({ data }: { data: PortfolioData }) {
           height={300}
         />
       </Link>
-      <div className="px-3 my-3 text-slate-700 xsm:my-2">
+      <div className="px-3 my-3 xsm:my-2">
         <div className="flex justify-between items-end">
           <h2 className="text-lg font-semibold xsm:text-base">{name}</h2>
           <div className="flex gap-3">
@@ -44,8 +44,8 @@ export default function Card({ data }: { data: PortfolioData }) {
             </a>
           </div>
         </div>
-        <p className="text-slate-500 text-xs pb-4 xsm:pb-2">{date}</p>
-        <p className="text-slate-600 tracking-wide text-sm border-t pt-4 xsm:text-xs xsm:pt-3">
+        <p className="text-slate-200 text-xs pb-4 xsm:pb-2">{date}</p>
+        <p className="text-slate-200 tracking-wide text-sm border-t pt-4 xsm:text-xs xsm:pt-3">
           {content}
         </p>
         <ul className="flex items-center gap-3 flex-wrap my-4 xsm:my-2">

@@ -1,5 +1,7 @@
 'use client';
 
+import PageCounter from '../profile/PageCounter';
+
 interface SectionProps {
   pageNum: number;
   component: React.FC;
@@ -9,6 +11,7 @@ interface SectionProps {
 
 export default function Section(props: SectionProps) {
   const { pageRefs, pageNum } = props;
+  console.log(pageNum);
 
   return (
     <div
@@ -16,11 +19,8 @@ export default function Section(props: SectionProps) {
         pageRefs.current[pageNum] = element!;
       }}
       className={`w-screen h-screen p-32 flex justify-center items-center md:p-12 xsm:p-8 ${
-        (pageNum === 2 || pageNum === 3) && 'bg-white xsm:p-4'
-      } ${
-        pageNum === 1 &&
-        'bg-gradient-to-b from-bg_beige via-bg_peach to-bg_gray'
-      } ${pageNum === 4 && ' bg-beige'}`}
+        (pageNum === 2 || pageNum === 3) && 'xsm:p-4'
+      }`}
     >
       {pageNum === 2 || pageNum === 3 ? (
         <div

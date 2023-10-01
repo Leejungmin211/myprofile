@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={namumGothic.className}>
-      <body className="w-screen mx-auto flex justify-center">{children}</body>
+      <body className="w-screen mx-auto flex justify-center text-clean_white bg-dark_black">
+        {children}
+      </body>
     </html>
   );
 }
