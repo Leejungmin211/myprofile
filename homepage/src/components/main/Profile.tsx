@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import TextAnimation from '../profile/TextAnimation';
 import PageCounter from '../profile/PageCounter';
+import ShadowButton from '../ui/ShadowButton';
 
 const ABOUT_DATA = [
   { link: '/#contact', text: 'jungmin.fe@gmail.com', target: '_self' },
@@ -25,17 +26,13 @@ export default function Profile() {
         <TextAnimation
           initialValue="FRONTEND DEVELOPER"
           nextText="Leejungmin"
+          styleText="-translate-x-20 opacity-0 animate-moveTextAnimate"
         />
-        <div className="flex gap-4 xsm:flex-col xsm:mx-12">
+        <div className="flex gap-4 -translate-x-20 opacity-0 animate-moveContentAnimate xsm:flex-col xsm:mx-12">
           {ABOUT_DATA.map((data, index) => {
             return (
-              <Link
-                key={index}
-                href={data.link}
-                target={data.target}
-                className="text-center text-base border rounded-md border-clean_white px-6 py-2 transition duration-0 hover:bg-l_brown xsm:text-xs xsm:mr-1 hover:duration-500 ease-in-out"
-              >
-                {data.text}
+              <Link key={index} href={data.link} target={data.target}>
+                <ShadowButton text={data.text} />
               </Link>
             );
           })}

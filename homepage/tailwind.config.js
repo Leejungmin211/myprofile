@@ -23,6 +23,7 @@ module.exports = {
         bg_gray: '#e2dae4',
         dark_black: '#101010',
         clean_white: '#fffafa',
+        transparent_White: '#fffafa6e',
       },
       width: {
         120: '120px',
@@ -39,6 +40,10 @@ module.exports = {
       borderWidth: {
         20: '20px',
       },
+      boxShadow: {
+        white_button:
+          '-2px -2px 7px 0px #0001, 2px 2px 7px 0px rgb(255, 255, 255)',
+      },
       screens: {
         xsm: { min: '360px', max: '767px' },
         xlg: { min: '1600px' },
@@ -54,7 +59,8 @@ module.exports = {
       keyframes: {
         moveAnimate: {
           '100%': {
-            transform: 'translateY(0px)',
+            opacity: '1',
+            transform: 'translateX(0)',
           },
         },
       },

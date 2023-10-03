@@ -29,7 +29,7 @@ export default function Categories({
             )}
             {type === 'string' && (
               <div
-                className={`hover:text-violet ${
+                className={`relative inline-block pb-1.5 after:hover:w-full after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-clean_white after:transition-all after:duration-300 after:ease-in-out ${
                   item.pageNum === currentPageNum && 'text-violet'
                 }`}
               >
