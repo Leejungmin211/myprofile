@@ -1,13 +1,14 @@
 import './globals.css';
-import { Open_Sans } from 'next/font/google';
+import { Nanum_Gothic } from 'next/font/google';
 
-const sans = Open_Sans({
+const namumGothic = Nanum_Gothic({
+  weight: '400',
   subsets: ['latin'],
 });
 
 export const metadata = {
-  title: 'Leejungmin',
-  description: '프론트엔드 개발자 이정민의 포토폴리오입니다.',
+  title: '프론트엔드 개발자_이정민',
+  description: '기술스택, 프로젝트를 담은 포토폴리오입니다.',
   icons: {
     icon: '/favicon.ico',
   },
@@ -19,8 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={sans.className}>
-      <body className="w-screen mx-auto flex justify-center">{children}</body>
+    <html lang="ko" className={namumGothic.className}>
+      <body className="w-screen mx-auto flex justify-center text-clean_white bg-dark_black">
+        {children}
+      </body>
     </html>
   );
 }

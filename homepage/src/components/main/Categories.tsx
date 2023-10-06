@@ -20,23 +20,26 @@ export default function Categories({
             className="cursor-pointer text-center"
           >
             {type === 'number' && (
-              <span
-                className={`${
+              <div
+                className={`w-3 h-3 border rounded-full border-slate-500 my-3 xsm:my-2 xsm:w-2.5 xsm:h-2.5 ${
                   item.pageNum === currentPageNum &&
-                  'text-rose-300 text-base xsm:text-xs'
+                  'bg-clean_white border-clean_white'
+                } ${
+                  item.pageNum === currentPageNum &&
+                  (currentPageNum === 2 || currentPageNum === 3) &&
+                  'bg-dark_black border-dark_black'
                 }`}
-              >
-                ●
-              </span>
+              ></div>
             )}
             {type === 'string' && (
-              <span
-                className={`hover:text-rose-400 transition duration-0 hover:duration-500 ease-in-out ${
-                  item.pageNum === currentPageNum && 'text-rose-400'
+              <div
+                className={`relative inline-block pb-1.5 after:hover:w-full after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-clean_white after:transition-all after:duration-300 after:ease-in-out ${
+                  (currentPageNum === 2 || currentPageNum === 3) &&
+                  `after:bg-dark_black`
                 }`}
               >
                 {item.name}
-              </span>
+              </div>
             )}
           </li>
         ))}

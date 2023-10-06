@@ -10,16 +10,20 @@ module.exports = {
       colors: {
         navy: '#0a0a7c',
         yellow_green: '#f7ffe5',
-        violet: '#5C469C',
+        violet: '#c8b6ff',
         l_brown: '#897d78',
         m_brown: '#6f615c',
         brown: '#45372f',
         pink: '#e17877',
         babypink: '#ffe3e3',
+        dark_violet: '#5a189a',
         beige: '#f5f1ee',
         bg_beige: '#f4eae5f0',
         bg_peach: '#f9d8ced9',
         bg_gray: '#e2dae4',
+        dark_black: '#101010',
+        clean_white: '#fffafa',
+        transparent_White: '#fffafa6e',
       },
       width: {
         120: '120px',
@@ -36,6 +40,10 @@ module.exports = {
       borderWidth: {
         20: '20px',
       },
+      boxShadow: {
+        white_button:
+          '-2px -2px 7px 0px #0001, 2px 2px 7px 0px rgb(255, 255, 255)',
+      },
       screens: {
         xsm: { min: '360px', max: '767px' },
         xlg: { min: '1600px' },
@@ -44,23 +52,15 @@ module.exports = {
         3: '3px',
       },
       animation: {
-        textAnimate: 'textAnimate 5s infinite alternate',
         moveImageAnimate: 'moveAnimate 1.5s forwards 0s',
         moveTextAnimate: 'moveAnimate 1.5s forwards 0.5s',
         moveContentAnimate: 'moveAnimate 1.5s forwards 1s',
       },
       keyframes: {
-        textAnimate: {
-          '0%': {
-            fill: 'rgb(244 63 94)',
-          },
-          '100%': {
-            fill: 'hsl(48.75, 198%, 98%)',
-          },
-        },
         moveAnimate: {
           '100%': {
-            transform: 'translateY(0px)',
+            opacity: '1',
+            transform: 'translateX(0)',
           },
         },
       },

@@ -1,6 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import Categories from './Categories';
 import { pageObj } from './FullPage';
+import WhiteLogo from '../../../public/images/whiteLogo.svg';
+import BlackLogo from '../../../public/images/blackLogo.svg';
 
 export interface PageCategory {
   pageArray: pageObj[];
@@ -14,19 +17,19 @@ export default function Header({
   currentPageNum,
 }: PageCategory) {
   return (
-    <header
-      className={`w-full h-16 fixed z-10 flex justify-between items-center text-brown ${
-        currentPageNum === 2 || currentPageNum === 3
-          ? 'duration-300 ease-in-out bg-beige'
-          : null
-      }`}
-    >
+    <header className="w-full fixed z-10 p-16 flex justify-between items-center xsm:p-8">
       <Link href="/">
-        <h1 className="text-2xl font-bold xsm:text-lg px-12 xsm:px-6">
-          Leejungmin
-        </h1>
+        {currentPageNum === 2 || currentPageNum === 3 ? (
+          <Image src={BlackLogo} alt="logo" width="130" />
+        ) : (
+          <Image src={WhiteLogo} alt="logo" width="130" />
+        )}
       </Link>
-      <ul className="flex gap-10 absolute right-8 text-lg font-semibold xsm:hidden">
+      <ul
+        className={`flex gap-10 text-sm font-extrabold tracking-wide xsm:hidden ${
+          (currentPageNum === 2 || currentPageNum === 3) && 'text-dark_black'
+        }`}
+      >
         <Categories
           pageArray={pageArray}
           onClick={onClick}
