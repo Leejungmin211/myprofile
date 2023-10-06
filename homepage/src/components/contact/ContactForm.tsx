@@ -1,6 +1,7 @@
 'use client';
 import sendContactEmail from '@/service/contact';
 import { ChangeEvent, FormEvent, useState } from 'react';
+import ShadowButton from '../ui/ShadowButton';
 import Banner, { BannerData } from './Banner';
 
 interface Form {
@@ -15,9 +16,9 @@ const DEFAULT_TEXT = {
   message: '',
 };
 
-const LABEL_STYLE = 'text-lg text-slate-200 xl:text-xl xsm:text-base';
+const LABEL_STYLE = 'text-md text-slate-200 xsm:text-base';
 const INPUT_STYLE =
-  'h-9 mb-3 p-3 rounded-md mt-1 text-slate-700 xl:h-10 xl:mb-4 xl:p-4 xsm:h-8 xsm:mb-2 xsm:p-2 xsm:text-sm';
+  'h-8 mb-3 p-3 rounded-md mt-1 text-slate-700 xl:h-10 xl:mb-4 xl:p-4 xsm:mb-2 xsm:p-2 xsm:text-sm';
 
 export default function ContactForm() {
   const [form, setForm] = useState<Form>(DEFAULT_TEXT);
@@ -51,7 +52,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="p-8 border-slate-100 border-opacity-50 border-2 rounded-2xl xl:p-12 xsm:p-6 xsm:border">
+    <section className="p-6 border-slate-100 border-opacity-50 border-2 rounded-2xl xl:p-10 xsm:border">
       {banner && <Banner banner={banner} />}
       <form onSubmit={onSubmit} className="w-80 flex flex-col xl:w-96 xsm:w-64">
         <label htmlFor="from" className={LABEL_STYLE}>
@@ -84,7 +85,7 @@ export default function ContactForm() {
           Message
         </label>
         <textarea
-          rows={10}
+          rows={8}
           id="message"
           name="message"
           placeholder="내용을 입력해주세요."
@@ -94,9 +95,7 @@ export default function ContactForm() {
           className="mb-6 rounded-md mt-1 xl:mb-8 p-4 text-slate-700 xsm:p-2 xsm:text-sm xsm:mb-4"
         />
         <div className="flex justify-end">
-          <button className="h-9 px-6 bg-m_brown rounded-md text-white font-semibold xl:h-10 xl:px-8 xsm:text-sm xsm:h-8 xsm:px-4 hover:opacity-80">
-            Send me an email
-          </button>
+          <ShadowButton text="Send me an email" />
         </div>
       </form>
     </section>

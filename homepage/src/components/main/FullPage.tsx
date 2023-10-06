@@ -89,7 +89,7 @@ export default function FullPage() {
             />
           );
         })}
-        <ul className="flex flex-col fixed top-96 right-10 z-10 xsm:right-3 xsm:top-1/2">
+        <ul className="flex flex-col fixed top-96 right-10 z-10 xsm:right-7 xsm:top-1/2">
           <Categories
             pageArray={pageArray}
             onClick={handlePointClick}

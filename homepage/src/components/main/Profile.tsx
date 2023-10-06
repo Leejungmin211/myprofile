@@ -21,14 +21,14 @@ const ABOUT_DATA = [
 
 export default function Profile() {
   return (
-    <section className="w-3/4 h-full flex gap-20 items-center text-clean_white">
-      <div className="flex flex-col gap-10 font-semibold xsm:gap-3">
+    <section className="w-3/4 h-full flex gap-20 items-center">
+      <div className="flex flex-col gap-10 font-semibold xsm:gap-5">
         <TextAnimation
           initialValue="FRONTEND DEVELOPER"
-          nextText="Leejungmin"
-          styleText="-translate-x-20 opacity-0 animate-moveTextAnimate"
+          nextText="Leejungmin PORTFOLIO"
+          styleText="-translate-x-20 opacity-0 animate-moveTextAnimate xsm:-translate-x-10"
         />
-        <div className="flex gap-4 -translate-x-20 opacity-0 animate-moveContentAnimate xsm:flex-col xsm:mx-12">
+        <div className="flex gap-4 -translate-x-20 opacity-0 animate-moveContentAnimate xsm:flex-wrap xsm:gap-3 xsm:-translate-x-10">
           {ABOUT_DATA.map((data, index) => {
             return (
               <Link key={index} href={data.link} target={data.target}>
