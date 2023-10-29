@@ -21,12 +21,12 @@ const ABOUT_DATA = [
 
 export default function Profile() {
   return (
-    <section className="w-3/4 h-full flex gap-20 items-center">
-      <div className="flex flex-col gap-10 font-semibold xsm:gap-5">
+    <section className="w-4/5 h-full flex gap-20 items-center overflow-hidden xsm:w-3/4">
+      <div className="w-full flex flex-col gap-10 font-semibold xsm:gap-5">
         <TextAnimation
           initialValue="FRONTEND DEVELOPER"
-          nextText="Leejungmin PORTFOLIO"
-          styleText="-translate-x-20 opacity-0 animate-moveTextAnimate xsm:-translate-x-10"
+          nextText="jungmin PORTFOLIO"
+          styleText="-translate-x-20 opacity-0 animate-moveTextAnimate xsm:-translate-x-10 xsm:h-20 xsm:w-3/4"
         />
         <div className="flex gap-4 -translate-x-20 opacity-0 animate-moveContentAnimate xsm:flex-wrap xsm:gap-3 xsm:-translate-x-10">
           {ABOUT_DATA.map((data, index) => {
