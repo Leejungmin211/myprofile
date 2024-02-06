@@ -26,41 +26,46 @@
   },
   {
     "id": 6,
-    "name": "Zustand",
-    "description": "상태 관리 라이브러리를 사용하여 상태를 전역으로 관리할 수 있습니다."
-  },
-  {
-    "id": 7,
     "name": "Next.js",
     "description": "Next.js 13 버전을 활용하여 최신 업데이트된 내용들을 이해하고 있으며, 서버 사이드 렌더링(SSR) 및 검색 엔진 최적화(SEO)와 관련된 개선 사항을 파악하고 적용할 수 있습니다."
   },
   {
+    "id": 7,
+    "name": "Vue.js",
+    "description": "CSS-in-JS 라이브러리를 사용하여 컴포넌트 스타일링을 할 수 있습니다."
+  },
+  {
     "id": 8,
+    "name": "Nuxt",
+    "description": "tailwindcss를 활용하여 스타일을 적용하고 커스터마이징할 수 있습니다."
+  },
+  {
+    "id": 9,
     "name": "React Query",
     "description": "데이터를 효과적으로 관리하고 캐싱하는 데 사용되는 React Query를 활용하여 API를 조작하고 다룰 수 있습니다."
   },
   {
-    "id": 9,
-    "name": "styled-components",
-    "description": "CSS-in-JS 라이브러리를 사용하여 컴포넌트 스타일링을 할 수 있습니다."
-  },
-  {
     "id": 10,
-    "name": "tailwindcss",
-    "description": "tailwindcss를 활용하여 스타일을 적용하고 커스터마이징할 수 있습니다."
+    "name": "Zustand",
+    "description": "상태 관리 라이브러리를 사용하여 상태를 전역으로 관리할 수 있습니다."
   },
   {
     "id": 11,
+    "name": "Pinia",
+    "description": "상태 관리 라이브러리를 사용하여 상태를 전역으로 관리할 수 있습니다."
+  },
+  {
+    "id": 12,
     "name": "Github",
     "description": "GitHub를 활용하여 팀 프로젝트의 코드 관리와 협업을 경험했으며, 풀 리퀘스트를 통한 코드 리뷰와 통합 프로세스에 참여한 경험이 있습니다."
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "AWS(S3)",
     "description": "S3를 활용하여 파일 스토리지를 관리하고, 정적 파일을 호스팅한 경험이 있으며 백엔드와 배포 과정도 진행한 적이 있습니다."
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "figma",
     "description": "사용자 인터페이스(UI) 및 사용자 경험(UX) 디자인을 생성, 편집, 공유할 수 있습니다."
   }

@@ -1,6 +1,5 @@
 import ReactIcon from '../../../public/images/icon/react.svg';
 import AwsIcon from '../../../public/images/icon/aws.svg';
-import AxiosIcon from '../../../public/images/icon/axios.svg';
 import ContextIcon from '../../../public/images/icon/context.svg';
 import JavascriptIcon from '../../../public/images/icon/javascript.svg';
 import NetlifyIcon from '../../../public/images/icon/netlify.svg';
@@ -17,6 +16,9 @@ import TailwindcssIcon from '../../../public/images/icon/tailwindcss.svg';
 import FirebaseIcon from '../../../public/images/icon/firebase.svg';
 import VercelIcon from '../../../public/images/icon/vercel.svg';
 import FigmaIcon from '../../../public/images/icon/figma.svg';
+import VueIcon from '../../../public/images/icon/vue.svg';
+import NuxtIcon from '../../../public/images/icon/nuxt.svg';
+import PiniaIcon from '../../../public/images/icon/pinia.svg';
 import Image from 'next/image';
 
 interface Icons {
@@ -25,7 +27,6 @@ interface Icons {
 
 const icons: Icons = {
   React: ReactIcon,
-  axois: AxiosIcon,
   'AWS(S3)': AwsIcon,
   Context: ContextIcon,
   JavaScript: JavascriptIcon,
@@ -43,6 +44,9 @@ const icons: Icons = {
   'Next.js': NextIcon,
   Github: GithubIcon,
   tailwindcss: TailwindcssIcon,
+  'Vue.js': VueIcon,
+  Nuxt: NuxtIcon,
+  Pinia: PiniaIcon,
 };
 
 export default function StackIcon({
