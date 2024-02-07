@@ -17,10 +17,3 @@ export interface TeckStackData {
   name: string;
   description: string;
 }
-
-export async function getPortfolioData(): Promise<PortfolioData[]> {
-  // const filePath = path.join(process.cwd(), 'data', 'portfolio.json');
-  // return readFile(filePath, 'utf-8')
-  //   .then<PortfolioData[]>(JSON.parse)
-  //   .then((data) => data);
-}
