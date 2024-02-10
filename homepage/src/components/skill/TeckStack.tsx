@@ -1,5 +1,5 @@
 'use client';
-import { TeckStackData } from '@/service/portfolio';
+import { TeckStackData } from '@/types/portfolio';
 import { useState } from 'react';
 import StackIcon from '../portfolio/StackIcon';
 import StackContent from './StackContent';

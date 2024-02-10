@@ -1,15 +1,11 @@
-import { PageCategory } from './Header';
-
-interface Props extends PageCategory {
-  type: string;
-}
+import { pageMenu } from '@/types/pageElement';
 
 export default function Categories({
   pageArray,
   onClick,
   currentPageNum,
   type,
-}: Props) {
+}: pageMenu) {
   return (
     <>
       {pageArray &&

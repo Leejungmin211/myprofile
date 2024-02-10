@@ -1,17 +1,8 @@
 'use client';
-
-import PageCounter from '../profile/PageCounter';
-
-interface SectionProps {
-  pageNum: number;
-  component: React.FC;
-  window: Window;
-  pageRefs: React.MutableRefObject<HTMLDivElement[]>;
-}
+import { SectionProps } from '@/types/pageElement';
 
 export default function Section(props: SectionProps) {
   const { pageRefs, pageNum } = props;
-  console.log(pageNum);
 
   return (
     <div

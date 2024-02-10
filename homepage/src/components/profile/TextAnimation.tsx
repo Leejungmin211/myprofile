@@ -1,16 +1,11 @@
 import { useEffect, useState } from 'react';
-
-interface Props {
-  initialValue: string;
-  nextText: string;
-  styleText?: string;
-}
+import { TextAnimationConfig } from '@/types/portfolio';
 
 export default function TextAnimation({
   initialValue,
   nextText,
   styleText,
-}: Props) {
+}: TextAnimationConfig) {
   const [text, setText] = useState<string>(initialValue);
   const [write, setWrite] = useState<number | null>(null);
 

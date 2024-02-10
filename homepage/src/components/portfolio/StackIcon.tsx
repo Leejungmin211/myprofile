@@ -1,53 +1,6 @@
-import ReactIcon from '../../../public/images/icon/react.svg';
-import AwsIcon from '../../../public/images/icon/aws.svg';
-import ContextIcon from '../../../public/images/icon/context.svg';
-import JavascriptIcon from '../../../public/images/icon/javascript.svg';
-import NetlifyIcon from '../../../public/images/icon/netlify.svg';
-import PostcssIcon from '../../../public/images/icon/postcss.svg';
-import StyledcomponentsIcon from '../../../public/images/icon/styledcomponents.svg';
-import ZustandIcon from '../../../public/images/icon/zustand.svg';
-import CssIcon from '../../../public/images/icon/css.svg';
-import HtmlIcon from '../../../public/images/icon/html.svg';
-import NextIcon from '../../../public/images/icon/next.svg';
-import ReactQueryIcon from '../../../public/images/icon/reactquery.svg';
-import TypeScriptIcon from '../../../public/images/icon/typescript.svg';
-import GithubIcon from '../../../public/images/icon/github-mark.svg';
-import TailwindcssIcon from '../../../public/images/icon/tailwindcss.svg';
-import FirebaseIcon from '../../../public/images/icon/firebase.svg';
-import VercelIcon from '../../../public/images/icon/vercel.svg';
-import FigmaIcon from '../../../public/images/icon/figma.svg';
-import VueIcon from '../../../public/images/icon/vue.svg';
-import NuxtIcon from '../../../public/images/icon/nuxt.svg';
-import PiniaIcon from '../../../public/images/icon/pinia.svg';
 import Image from 'next/image';
-
-interface Icons {
-  [key: string]: string;
-}
-
-const icons: Icons = {
-  React: ReactIcon,
-  'AWS(S3)': AwsIcon,
-  Context: ContextIcon,
-  JavaScript: JavascriptIcon,
-  postcss: PostcssIcon,
-  'styled-components': StyledcomponentsIcon,
-  Zustand: ZustandIcon,
-  netlify: NetlifyIcon,
-  firebase: FirebaseIcon,
-  figma: FigmaIcon,
-  HTML: HtmlIcon,
-  CSS: CssIcon,
-  vercel: VercelIcon,
-  TypeScript: TypeScriptIcon,
-  'React Query': ReactQueryIcon,
-  'Next.js': NextIcon,
-  Github: GithubIcon,
-  tailwindcss: TailwindcssIcon,
-  'Vue.js': VueIcon,
-  Nuxt: NuxtIcon,
-  Pinia: PiniaIcon,
-};
+import { icons } from '@/constants/portfolioManifest';
+import { InteractiveIcon } from '@/types/portfolio';
 
 export default function StackIcon({
   name,
@@ -55,13 +8,7 @@ export default function StackIcon({
   height,
   onClick,
   type,
-}: {
-  name: string;
-  width: number;
-  height: number;
-  onClick?: () => void;
-  type?: string;
-}) {
+}: InteractiveIcon) {
   const IconComponent = icons[name];
   const handleClick = () => {
     if (onClick) {

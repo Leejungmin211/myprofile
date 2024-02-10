@@ -1,23 +1,8 @@
 'use client';
 import Link from 'next/link';
 import TextAnimation from '../profile/TextAnimation';
-import PageCounter from '../profile/PageCounter';
 import ShadowButton from '../ui/ShadowButton';
-
-const ABOUT_DATA = [
-  { link: '/#contact', text: 'jungmin.fe@gmail.com', target: '_self' },
-  {
-    link: 'https://hail-teal-329.notion.site/6bd39f1b9d9f4f11976929634fd7f67e?pvs=4',
-    text: 'RESUME',
-    target: '_blank',
-  },
-  {
-    link: 'https://github.com/Leejungmin211',
-    text: 'GITHUB',
-    target: '_blank',
-  },
-  { link: 'https://velog.io/@jungmin211', text: 'BLOG', target: '_blank' },
-];
+import { ABOUT_DATA } from '@/constants/portfolioManifest';
 
 export default function Profile() {
   return (

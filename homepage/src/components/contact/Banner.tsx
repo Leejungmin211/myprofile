@@ -1,7 +1,4 @@
-export interface BannerData {
-  message: string;
-  state: 'success' | 'error';
-}
+import { BannerData } from '@/types/communicationData';
 
 export default function Banner({
   banner: { message, state },

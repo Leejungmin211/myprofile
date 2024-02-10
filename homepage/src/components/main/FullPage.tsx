@@ -3,24 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import Section from './Section';
 import Categories from './Categories';
 import Header from './Header';
-import Profile from './Profile';
-import Skill from './Skill';
-import Project from './Project';
-import Contact from './Contact';
 import PageCounter from '../profile/PageCounter';
-
-export interface pageObj {
-  pageNum: number;
-  component: React.FC;
-  name: string;
-}
-
-export const pageArray = [
-  { pageNum: 1, component: Profile, name: 'PROFILE' },
-  { pageNum: 2, component: Skill, name: 'SKILL' },
-  { pageNum: 3, component: Project, name: 'PROJECT' },
-  { pageNum: 4, component: Contact, name: 'CONTACT' },
-];
+import { pageArray } from '@/constants/portfolioManifest';
 
 export default function FullPage() {
   const [windowObj, setWindowObj] = useState<Window | null>(null);

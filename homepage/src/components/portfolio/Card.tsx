@@ -1,4 +1,4 @@
-import { PortfolioData } from '@/service/portfolio';
+import { PortfolioData } from '@/types/portfolio';
 import Image from 'next/image';
 import Link from 'next/link';
 import GithubIcon from '../../../public/images/icon/github-mark.svg';

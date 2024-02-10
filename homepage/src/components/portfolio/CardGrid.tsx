@@ -1,4 +1,4 @@
-import { PortfolioData } from '@/service/portfolio';
+import { PortfolioData } from '@/types/portfolio';
 import Card from './Card';
 
 export default function CardGrid({

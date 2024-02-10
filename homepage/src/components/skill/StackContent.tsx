@@ -1,9 +1,5 @@
-import { TeckStackData } from '@/service/portfolio';
+import { StackContentProps } from '@/types/portfolio';
 import StackIcon from '../portfolio/StackIcon';
-
-interface StackContentProps {
-  selected: TeckStackData | null;
-}
 
 export default function StackContent({ selected }: StackContentProps) {
   return (

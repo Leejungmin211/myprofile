@@ -1,10 +1,5 @@
 import nodemailer from 'nodemailer';
-
-export type EmailData = {
-  from: string;
-  subject: string;
-  message: string;
-};
+import { EmailData } from '@/types/communicationData';
 
 const trancporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
