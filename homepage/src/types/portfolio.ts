@@ -31,7 +31,6 @@ export type TextAnimationConfig = {
 
 export type InteractiveIcon = {
   name: string;
-  width: number;
   height: number;
   onClick?: () => void;
   type?: string;

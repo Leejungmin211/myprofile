@@ -30,18 +30,16 @@ export default function Card({ data }: { data: PortfolioData }) {
               <Image
                 src={HomeIcon}
                 alt="homepage"
-                width={25}
                 height={25}
-                className="hover:scale-110"
+                className="hover:scale-110 object-cover"
               />
             </a>
             <a href={github} target="_blank">
               <Image
                 src={GithubIcon}
                 alt="homepage"
-                width={25}
                 height={25}
-                className="hover:scale-110"
+                className="hover:scale-110 object-cover"
               />
             </a>
           </div>
@@ -53,7 +51,7 @@ export default function Card({ data }: { data: PortfolioData }) {
         <ul className="flex items-center gap-3 flex-wrap my-4 xsm:my-3">
           {stack.map((name, index) => (
             <li key={index}>
-              <StackIcon name={name} width={20} height={20} type="tag" />
+              <StackIcon name={name} height={20} type="tag" />
             </li>
           ))}
         </ul>

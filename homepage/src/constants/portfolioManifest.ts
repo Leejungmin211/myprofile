@@ -1,5 +1,5 @@
 import Profile from '../components/main/Profile';
-import Skill from '../components/main/Skill';
+import CareerAndSkills from '../components/main/CareerAndSkills';
 import Project from '../components/main/Project';
 import Contact from '../components/main/Contact';
 import ReactIcon from '../../public/images/icon/react.svg';
@@ -66,7 +66,17 @@ export const ABOUT_DATA = [
 
 export const pageArray = [
   { pageNum: 1, component: Profile, name: 'PROFILE' },
-  { pageNum: 2, component: Skill, name: 'SKILL' },
+  { pageNum: 2, component: CareerAndSkills, name: 'SKILL' },
   { pageNum: 3, component: Project, name: 'PROJECT' },
   { pageNum: 4, component: Contact, name: 'CONTACT' },
 ];
+
+export const motionVariants = {
+  visible: { opacity: 1, y: 0 },
+};
+
+export const transitionValue = {
+  ease: 'easeInOut',
+  duration: 3,
+  y: { duration: 1 },
+};

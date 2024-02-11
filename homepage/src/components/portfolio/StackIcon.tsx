@@ -4,7 +4,6 @@ import { InteractiveIcon } from '@/types/portfolio';
 
 export default function StackIcon({
   name,
-  width,
   height,
   onClick,
   type,
@@ -27,10 +26,9 @@ export default function StackIcon({
           <Image
             src={IconComponent}
             alt={IconComponent}
-            width={width}
             height={height}
             onClick={handleClick}
-            className="cursor-pointer hover:scale-110 hover:transition duration-300"
+            className="cursor-pointer hover:scale-110 hover:transition duration-300 object-cover"
           />
         </div>
       ) : null}
