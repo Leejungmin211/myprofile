@@ -16,7 +16,7 @@ export default function Project() {
       transition={transition}
       className="xsm:mx-10"
     >
-      <h2 className="xlg:text-4xl text-3xl font-bold text-dark_black text-right m-5 xsm:text-2xl xsm:mb-5">
+      <h2 className="xlg:text-4xl text-2xl xsm:text-xl font-bold text-dark_black text-right m-5 xsm:mb-5">
         PROJECT
       </h2>
       <CardGrid portfolioData={portfolioData} />

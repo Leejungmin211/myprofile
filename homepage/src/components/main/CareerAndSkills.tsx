@@ -9,14 +9,14 @@ export default function CareerAndSkills() {
     useMotionAnimation(150);
 
   return (
-    <section className="flex gap-24 mt-10 xsm:mx-10">
+    <section className="flex lg:gap-28 mt-10 lg:flex-row lg:text-base md:text-sm md:flex-col xsm:mx-10 xsm:flex-col xsm:text-xs gap-10">
       <motion.div
         initial={initial}
         whileInView={whileInView}
         viewport={viewport}
         transition={transition}
       >
-        <h2 className="xlg:text-4xl text-3xl xsm:text-2xl font-bold text-dark_black">
+        <h2 className="xlg:text-4xl text-2xl xsm:text-xl font-bold text-dark_black">
           SKILLS
         </h2>
         <TeckStack stackData={stackData} />
@@ -27,12 +27,10 @@ export default function CareerAndSkills() {
         viewport={viewport}
         transition={transition}
       >
-        <h2 className="xlg:text-4xl text-3xl xsm:text-2xl text-right font-bold text-dark_black">
-          Career
+        <h2 className="xlg:text-4xl text-2xl xsm:text-xl font-bold text-dark_black">
+          CAREER
         </h2>
-        <div className="mt-1 xsm:mt-5">
-          <Career />
-        </div>
+        <Career />
       </motion.div>
     </section>
   );

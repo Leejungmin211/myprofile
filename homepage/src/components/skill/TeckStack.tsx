@@ -27,7 +27,7 @@ export default function TeckStack({
       whileInView={whileInView}
       viewport={viewport}
       transition={transition}
-      className="flex flex-col w-[480px] justify-center items-center mt-14 xsm:mt-5 xsm:flex-col"
+      className="flex flex-col w-[480px] justify-center items-center lg:mt-14 mt-3"
     >
       <StackContent selected={selected} />
       <motion.div
@@ -36,9 +36,9 @@ export default function TeckStack({
         viewport={viewport}
         transition={transition}
       >
-        <ul className="flex flex-wrap justify-center items-center border-8 rounded-md border-clean_white p-7 xsm:p-5">
+        <ul className="flex flex-wrap justify-center items-center border-8 rounded-md border-clean_white lg:p-7 p-2">
           {stackData.map((stack) => (
-            <li key={stack.id} className="m-4 xsm:w-7 xsm:m-2">
+            <li key={stack.id} className="lg:m-4 lg:w-10 w-7 m-3">
               <StackIcon
                 name={stack.name}
                 height={45}
