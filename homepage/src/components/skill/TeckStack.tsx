@@ -27,7 +27,7 @@ export default function TeckStack({
       whileInView={whileInView}
       viewport={viewport}
       transition={transition}
-      className="flex flex-col w-[480px] justify-center items-center lg:mt-14 mt-3"
+      className="flex flex-col lg:w-[480px] justify-center w-full items-center lg:mt-14 mt-3"
     >
       <StackContent selected={selected} />
       <motion.div

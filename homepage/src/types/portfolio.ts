@@ -35,3 +35,12 @@ export type InteractiveIcon = {
   onClick?: () => void;
   type?: string;
 };
+
+export type CareerData = {
+  id: string;
+  company: string;
+  experience_period: string;
+  role: string;
+  summary: string;
+  content: [];
+};

@@ -1,17 +1,30 @@
-export default function Career() {
+import { CareerData } from '@/types/portfolio';
+
+export default function Career({ careerData }: { careerData: CareerData[] }) {
   return (
-    <div className="flex items-center justify-between w-[480px] text-gray-600 overflow-hidden mt-14 xsm:mt-5 xsm:w-64 xsm:mr-0 xsm:flex-row xsm:mb-4">
-      <div>
-        <h3>아이템샵</h3>
-        <span>2023.10 ~ 현재</span>
-        <div>
-          <p className="">
-            테니스 용품을 판매하는 쇼핑몰로 프론트엔드 업무의 90%를
-            담당하였습니다. 고객들이 이미지 에디터를 통해 나만의 커스텀 상품을
-            만들 수 있는 서비스도 제공예정에 있습니다.
-          </p>
-        </div>
-      </div>
-    </div>
+    <ul className="flex items-center justify-between w-[480px] text-gray-600 overflow-hidden lg:mt-16 mt-4 xsm:mt-5 xsm:w-64 xsm:mr-0 xsm:flex-row xsm:mb-4">
+      {careerData.map((career) => (
+        <li key={career.id}>
+          <h3 className="font-semibold text-lg pb-1">{career.company}</h3>
+          <div className="flex items-end justify-between text-sm border-b pb-2">
+            <span>{career.role}</span>
+            <span className="text-[12px] text-gray-500">
+              {career.experience_period}
+            </span>
+          </div>
+          <div className="py-3.5">
+            <p className="">{career.summary}</p>
+          </div>
+          <ul>
+            {career.content.map((item, index) => (
+              <li key={index} className="pb-2">
+                <span className="before:content-['•']"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
   );
 }
