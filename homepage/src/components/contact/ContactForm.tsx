@@ -1,23 +1,14 @@
 'use client';
-import sendContactEmail from '@/service/contact';
 import { ChangeEvent, FormEvent, useState } from 'react';
+import sendContactEmail from '@/service/contact';
+import { BannerData, Form } from '@/types/communicationData';
+import { DEFAULT_TEXT } from '@/constants/contact';
 import ShadowButton from '../ui/ShadowButton';
-import Banner, { BannerData } from './Banner';
+import Banner from './Banner';
 
-interface Form {
-  from: string;
-  subject: string;
-  message: string;
-}
+export const LABEL_STYLE = 'text-md text-slate-200 xsm:text-base';
 
-const DEFAULT_TEXT = {
-  from: '',
-  subject: '',
-  message: '',
-};
-
-const LABEL_STYLE = 'text-md text-slate-200 xsm:text-base';
-const INPUT_STYLE =
+export const INPUT_STYLE =
   'h-8 mb-3 p-3 rounded-md mt-1 text-slate-700 xl:h-10 xl:mb-4 xl:p-4 xsm:mb-2 xsm:p-2 xsm:text-sm';
 
 export default function ContactForm() {

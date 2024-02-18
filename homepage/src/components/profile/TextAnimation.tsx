@@ -1,16 +1,11 @@
 import { useEffect, useState } from 'react';
-
-interface Props {
-  initialValue: string;
-  nextText: string;
-  styleText?: string;
-}
+import { TextAnimationConfig } from '@/types/portfolio';
 
 export default function TextAnimation({
   initialValue,
   nextText,
   styleText,
-}: Props) {
+}: TextAnimationConfig) {
   const [text, setText] = useState<string>(initialValue);
   const [write, setWrite] = useState<number | null>(null);
 
@@ -60,7 +55,7 @@ export default function TextAnimation({
   return (
     <>
       <h1
-        className={`font-sans text-5xl inline-block font-bold uppercase tracking-wide hover:text-violet xsm:text-4xl xlg:text-7xl ${
+        className={`font-sans text-4xl inline-block font-bold uppercase tracking-wide hover:text-violet lg:text-6xl xlg:text-7xl ${
           styleText && styleText
         }`}
         onMouseOver={mouseOverHandler}

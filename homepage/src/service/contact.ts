@@ -1,4 +1,4 @@
-import { EmailData } from './email';
+import { EmailData } from '@/types/communicationData';
 
 export default async function sendContactEmail(email: EmailData) {
   const response = await fetch('api/contact', {

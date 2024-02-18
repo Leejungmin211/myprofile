@@ -31,11 +31,10 @@ export default function TypingText() {
   }, [count]);
 
   useEffect(() => {
-    // Start the blinking cursor after typing is completed
     if (typingCompleted) {
       const cursorBlinkInterval = setInterval(() => {
         setShowCursor((prev) => !prev);
-      }, 500); // Adjust the blinking speed
+      }, 500);
 
       return () => {
         clearInterval(cursorBlinkInterval);

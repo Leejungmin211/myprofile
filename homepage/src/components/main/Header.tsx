@@ -1,15 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Categories from './Categories';
-import { pageObj } from './FullPage';
 import WhiteLogo from '../../../public/images/whiteLogo.svg';
 import BlackLogo from '../../../public/images/blackLogo.svg';
-
-export interface PageCategory {
-  pageArray: pageObj[];
-  onClick: (pageNum: number) => void;
-  currentPageNum: number;
-}
+import { PageCategory } from '@/types/pageElement';
 
 export default function Header({
   pageArray,
