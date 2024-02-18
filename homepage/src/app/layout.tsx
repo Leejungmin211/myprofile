@@ -1,9 +1,9 @@
 import './globals.css';
-import { Nanum_Gothic } from 'next/font/google';
+import { Noto_Sans_Gothic } from 'next/font/google';
 
-const namumGothic = Nanum_Gothic({
+const NotoSansGothic = Noto_Sans_Gothic({
   weight: '400',
-  subsets: ['latin'],
+  subsets: ['gothic'],
 });
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={namumGothic.className}>
+    <html lang="ko" className={NotoSansGothic.className}>
       <body className="w-screen mx-auto flex justify-center text-clean_white bg-dark_black">
         {children}
       </body>
